@@ -1,0 +1,99 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/sprites/GUI/Button_65.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/GUI/Button_91.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/GUI/Button_89.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/GUI/Button_25.png" type="Texture" id=4]
+[ext_resource path="res://src/UIs/EndMenu.gd" type="Script" id=5]
+[ext_resource path="res://assets/sprites/GUI/Button_27.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/GUI/Button_67.png" type="Texture" id=8]
+[ext_resource path="res://assets/fonts/ALGER.TTF" type="DynamicFontData" id=9]
+[ext_resource path="res://src/UIs/Components/Title.tscn" type="PackedScene" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+outline_size = 1
+font_data = ExtResource( 9 )
+
+[node name="EndMenu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseOverlay" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.72549 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameTitle" parent="PauseOverlay" instance=ExtResource( 10 )]
+margin_top = 192.0
+margin_bottom = 375.0
+custom_fonts/font = SubResource( 1 )
+text = "Don't Give Up
+( ^_^ )"
+
+[node name="ButtonsLayout" type="HBoxContainer" parent="PauseOverlay"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -92.0
+margin_bottom = 136.0
+custom_constants/separation = 100
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Left" type="VBoxContainer" parent="PauseOverlay/ButtonsLayout"]
+margin_left = 670.0
+margin_top = 127.0
+margin_right = 770.0
+margin_bottom = 228.0
+size_flags_horizontal = 10
+size_flags_vertical = 8
+
+[node name="HomeButton" type="TextureButton" parent="PauseOverlay/ButtonsLayout/Left"]
+margin_right = 100.0
+margin_bottom = 101.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 7 )
+
+[node name="Center" type="VBoxContainer" parent="PauseOverlay/ButtonsLayout"]
+margin_left = 870.0
+margin_right = 1050.0
+margin_bottom = 228.0
+size_flags_vertical = 3
+
+[node name="ReplayButton" type="TextureButton" parent="PauseOverlay/ButtonsLayout/Center"]
+margin_right = 180.0
+margin_bottom = 180.0
+rect_min_size = Vector2( 180, 180 )
+texture_normal = ExtResource( 3 )
+texture_pressed = ExtResource( 2 )
+expand = true
+
+[node name="Right" type="VBoxContainer" parent="PauseOverlay/ButtonsLayout"]
+margin_left = 1150.0
+margin_top = 128.0
+margin_right = 1250.0
+margin_bottom = 228.0
+size_flags_horizontal = 2
+size_flags_vertical = 10
+
+[node name="ExitButton" type="TextureButton" parent="PauseOverlay/ButtonsLayout/Right"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 8 )
+expand = true
+[connection signal="button_up" from="PauseOverlay/ButtonsLayout/Left/HomeButton" to="." method="_on_HomeButton_button_up"]
+[connection signal="button_up" from="PauseOverlay/ButtonsLayout/Center/ReplayButton" to="." method="_on_ReplayButton_button_up"]
+[connection signal="button_up" from="PauseOverlay/ButtonsLayout/Right/ExitButton" to="." method="_on_ExitButton_button_up"]

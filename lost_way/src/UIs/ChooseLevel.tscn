@@ -1,0 +1,388 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://src/UIs/Components/LevelButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/sprites/tiles/horror/background/BG.png" type="Texture" id=2]
+[ext_resource path="res://src/UIs/Components/Title.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/fonts/ALGER.TTF" type="DynamicFontData" id=4]
+[ext_resource path="res://assets/sprites/GUI/Button_128.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/GUI/Button_127.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/GUI/Button_125.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/GUI/Button_112.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/GUI/Button_109.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/GUI/Button_111.png" type="Texture" id=10]
+[ext_resource path="res://src/UIs/ChooseLevel.gd" type="Script" id=11]
+[ext_resource path="res://assets/sprites/GUI/Button_4.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/coin/blue_coin_hexagon_1.png" type="Texture" id=13]
+[ext_resource path="res://src/Levels/Level1_02.tscn" type="PackedScene" id=14]
+[ext_resource path="res://assets/sprites/GUI/Button_6.png" type="Texture" id=15]
+[ext_resource path="res://src/Levels/Level1_01.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/Levels/Level1_03.tscn" type="PackedScene" id=17]
+[ext_resource path="res://src/Levels/Level1_04.tscn" type="PackedScene" id=18]
+[ext_resource path="res://src/Levels/Level1_05.tscn" type="PackedScene" id=19]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=2]
+length = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="DynamicFont" id=4]
+size = 100
+outline_size = 3
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 100
+outline_size = 1
+outline_color = Color( 1, 0, 0, 1 )
+font_data = ExtResource( 4 )
+
+[node name="ChooseLevel" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorBuffer" type="CanvasLayer" parent="."]
+layer = -128
+
+[node name="ColorRect" type="ColorRect" parent="ColorBuffer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HorrorSeason" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -0.00012207
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GameTitle" parent="HorrorSeason" instance=ExtResource( 3 )]
+margin_top = 64.0
+margin_bottom = 204.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0, 0, 1 )
+text = "Season: Death Place"
+
+[node name="Container" type="VBoxContainer" parent="HorrorSeason"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -576.0
+margin_top = -760.0
+margin_right = 574.0
+margin_bottom = -110.0
+size_flags_horizontal = 3
+size_flags_vertical = 2
+custom_constants/separation = 100
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line1" type="HBoxContainer" parent="HorrorSeason/Container"]
+margin_right = 1150.0
+margin_bottom = 150.0
+size_flags_horizontal = 7
+size_flags_vertical = 0
+custom_constants/separation = 100
+
+[node name="1" parent="HorrorSeason/Container/Line1" instance=ExtResource( 1 )]
+margin_bottom = 150.0
+scene_level = ExtResource( 16 )
+level = "01"
+
+[node name="2" parent="HorrorSeason/Container/Line1" instance=ExtResource( 1 )]
+margin_left = 250.0
+margin_right = 400.0
+margin_bottom = 150.0
+scene_level = ExtResource( 14 )
+level = "02"
+
+[node name="3" parent="HorrorSeason/Container/Line1" instance=ExtResource( 1 )]
+margin_left = 500.0
+margin_right = 650.0
+margin_bottom = 150.0
+scene_level = ExtResource( 17 )
+level = "03"
+
+[node name="4" parent="HorrorSeason/Container/Line1" instance=ExtResource( 1 )]
+margin_left = 750.0
+margin_right = 900.0
+margin_bottom = 150.0
+scene_level = ExtResource( 18 )
+level = "04"
+
+[node name="5" parent="HorrorSeason/Container/Line1" instance=ExtResource( 1 )]
+margin_left = 1000.0
+margin_right = 1150.0
+margin_bottom = 150.0
+scene_level = ExtResource( 19 )
+level = "05"
+
+[node name="Line2" type="HBoxContainer" parent="HorrorSeason/Container"]
+margin_top = 250.0
+margin_right = 1150.0
+margin_bottom = 400.0
+size_flags_horizontal = 7
+size_flags_vertical = 0
+custom_constants/separation = 100
+
+[node name="1" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "06"
+
+[node name="2" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+margin_left = 250.0
+margin_right = 400.0
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "07"
+
+[node name="3" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+margin_left = 500.0
+margin_right = 650.0
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "08"
+
+[node name="4" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+margin_left = 750.0
+margin_right = 900.0
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "09"
+
+[node name="5" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+margin_left = 1000.0
+margin_right = 1150.0
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "10"
+
+[node name="Line3" type="HBoxContainer" parent="HorrorSeason/Container"]
+margin_top = 500.0
+margin_right = 1150.0
+margin_bottom = 650.0
+size_flags_horizontal = 7
+size_flags_vertical = 0
+custom_constants/separation = 100
+
+[node name="1" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "11"
+
+[node name="2" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+margin_left = 250.0
+margin_right = 400.0
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "12"
+
+[node name="3" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+margin_left = 500.0
+margin_right = 650.0
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "13"
+
+[node name="4" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+margin_left = 750.0
+margin_right = 900.0
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "14"
+
+[node name="5" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+margin_left = 1000.0
+margin_right = 1150.0
+margin_bottom = 150.0
+disabled = true
+scene_level = ExtResource( 16 )
+level = "15"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HorrorSeason"]
+autoplay = "Default"
+anims/Default = SubResource( 2 )
+anims/Fade_Out = SubResource( 3 )
+
+[node name="Locker" type="ColorRect" parent="HorrorSeason"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.352941, 0.34902, 0.34902, 0.619608 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Requirement" type="HBoxContainer" parent="HorrorSeason/Locker"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -189.5
+margin_top = -240.0
+margin_right = 189.5
+margin_bottom = -128.0
+size_flags_horizontal = 15
+size_flags_vertical = 6
+custom_constants/separation = 30
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GemNumber" type="Label" parent="HorrorSeason/Locker/Requirement"]
+margin_right = 237.0
+margin_bottom = 112.0
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0.905882, 1, 1 )
+text = "1000"
+
+[node name="GemIcon" type="TextureRect" parent="HorrorSeason/Locker/Requirement"]
+margin_left = 267.0
+margin_right = 379.0
+margin_bottom = 112.0
+rect_min_size = Vector2( 112, 112 )
+texture = ExtResource( 13 )
+expand = true
+
+[node name="UnLock" type="TextureButton" parent="HorrorSeason/Locker"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -40.0
+margin_right = 250.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 500, 200 )
+texture_normal = ExtResource( 12 )
+texture_pressed = ExtResource( 15 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HorrorSeason/Locker/UnLock"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 5 )
+text = "UNLOCK"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PreSeason" type="TextureButton" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 120.0
+margin_top = -50.0
+margin_right = 100.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 6 )
+texture_disabled = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextSeason" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -220.0
+margin_top = -50.0
+margin_right = -120.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 100, 100 )
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 10 )
+texture_disabled = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_up" from="PreSeason" to="." method="_on_PreSeason_button_up"]
+[connection signal="button_up" from="NextSeason" to="." method="_on_NextSeason_button_up"]

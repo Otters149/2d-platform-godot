@@ -1,0 +1,132 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://assets/sprites/check_point/010000.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/check_point/010010.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/check_point/010004.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/check_point/010015.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/check_point/010003.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/check_point/010009.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/check_point/010006.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/check_point/010016.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/check_point/010001.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/check_point/010005.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/check_point/010013.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/check_point/010017.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/check_point/010018.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/check_point/010014.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/check_point/010012.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/check_point/010007.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/check_point/010008.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/check_point/010002.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/check_point/010019.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/check_point/010011.png" type="Texture" id=20]
+[ext_resource path="res://src/Objects/CheckPoint.gd" type="Script" id=21]
+[ext_resource path="res://assets/fonts/Ingame.TTF" type="DynamicFontData" id=22]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 6 ), ExtResource( 2 ), ExtResource( 20 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "default",
+"speed": 20.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 33.9087
+height = 97.9868
+
+[sub_resource type="Animation" id=3]
+resource_name = "Default"
+length = 0.9
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 0, 0, 0.392157 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Label:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "Entered"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.392157 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Label:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="DynamicFont" id=5]
+font_data = ExtResource( 22 )
+
+[node name="CheckPoint" type="Area2D"]
+modulate = Color( 1, 0, 0, 0.392157 )
+collision_layer = 128
+script = ExtResource( 21 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+modulate = Color( 0.996078, 0.996078, 0.996078, 1 )
+position = Vector2( -2.82849, 0 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 28 )
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Default"
+anims/Default = SubResource( 3 )
+anims/Entered = SubResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+margin_left = -78.6533
+margin_top = -112.222
+margin_right = 89.3467
+margin_bottom = -70.2218
+custom_fonts/font = SubResource( 5 )
+text = "Check Point!"
+align = 1
+valign = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="body_entered" from="." to="." method="_on_CheckPoint_body_entered"]
