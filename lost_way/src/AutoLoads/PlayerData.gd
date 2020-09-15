@@ -41,3 +41,5 @@ func set_level(value: String) -> void:
 func reset():
 	live = 3
 	coin = 0
+	emit_signal("death", live)
+	emit_signal("collect_coin", coin)

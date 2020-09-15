@@ -5,6 +5,7 @@ export (PackedScene) var Player
 export var level:= '1_01'
 
 func _ready() -> void:
+	PlayerData.reset()
 	PlayerData.set_level(level)
 	PlayerData.connect("death", self, "respawn")
 	
