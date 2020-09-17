@@ -17,13 +17,13 @@ outline_size = 3
 font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 60
+size = 120
 outline_size = 1
 outline_color = Color( 1, 0, 0, 1 )
 font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 32
+size = 60
 outline_size = 1
 outline_color = Color( 1, 0, 0, 1 )
 font_data = ExtResource( 8 )
@@ -75,17 +75,16 @@ margin_bottom = 332.0
 custom_fonts/font = SubResource( 1 )
 
 [node name="Setting" parent="CanvasLayer" instance=ExtResource( 6 )]
-margin_bottom = 84.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -192.0
-margin_top = -284.0
-margin_right = 208.0
-margin_bottom = 484.0
+margin_left = -350.0
+margin_top = -233.0
+margin_right = 350.0
+margin_bottom = 535.0
 size_flags_horizontal = 7
 size_flags_vertical = 6
 size_flags_stretch_ratio = 0.0
@@ -96,17 +95,23 @@ __meta__ = {
 }
 
 [node name="Play" type="TextureButton" parent="CanvasLayer/VBoxContainer"]
-margin_top = 229.0
-margin_right = 400.0
-margin_bottom = 379.0
-rect_min_size = Vector2( 400, 150 )
+margin_top = 104.0
+margin_right = 700.0
+margin_bottom = 404.0
+rect_min_size = Vector2( 700, 300 )
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 2 )
 expand = true
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/Play"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -350.0
+margin_top = -150.0
+margin_right = 350.0
+margin_bottom = 150.0
 custom_fonts/font = SubResource( 2 )
 text = "Play"
 align = 1
@@ -116,25 +121,31 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
-margin_left = 100.0
-margin_top = 439.0
-margin_right = 300.0
-margin_bottom = 539.0
+margin_left = 150.0
+margin_top = 464.0
+margin_right = 550.0
+margin_bottom = 664.0
 rect_min_size = Vector2( 200, 100 )
 size_flags_horizontal = 6
 size_flags_vertical = 5
 
 [node name="Quit" type="TextureButton" parent="CanvasLayer/VBoxContainer/HBoxContainer"]
-margin_right = 200.0
-margin_bottom = 100.0
-rect_min_size = Vector2( 200, 100 )
+margin_right = 400.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 400, 200 )
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 2 )
 expand = true
 
 [node name="Label" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer/Quit"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -100.0
+margin_right = 200.0
+margin_bottom = 100.0
 custom_fonts/font = SubResource( 3 )
 text = "Quit"
 align = 1

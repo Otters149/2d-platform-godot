@@ -161,6 +161,7 @@ level = "01"
 margin_left = 250.0
 margin_right = 400.0
 margin_bottom = 150.0
+disabled = true
 scene_level = ExtResource( 14 )
 level = "02"
 
@@ -168,6 +169,7 @@ level = "02"
 margin_left = 500.0
 margin_right = 650.0
 margin_bottom = 150.0
+disabled = true
 scene_level = ExtResource( 17 )
 level = "03"
 
@@ -175,6 +177,7 @@ level = "03"
 margin_left = 750.0
 margin_right = 900.0
 margin_bottom = 150.0
+disabled = true
 scene_level = ExtResource( 18 )
 level = "04"
 
@@ -182,6 +185,7 @@ level = "04"
 margin_left = 1000.0
 margin_right = 1150.0
 margin_bottom = 150.0
+disabled = true
 scene_level = ExtResource( 19 )
 level = "05"
 
@@ -193,13 +197,13 @@ size_flags_horizontal = 7
 size_flags_vertical = 0
 custom_constants/separation = 100
 
-[node name="1" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+[node name="6" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
 margin_bottom = 150.0
 disabled = true
 scene_level = ExtResource( 16 )
 level = "06"
 
-[node name="2" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+[node name="7" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
 margin_left = 250.0
 margin_right = 400.0
 margin_bottom = 150.0
@@ -207,7 +211,7 @@ disabled = true
 scene_level = ExtResource( 16 )
 level = "07"
 
-[node name="3" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+[node name="8" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
 margin_left = 500.0
 margin_right = 650.0
 margin_bottom = 150.0
@@ -215,7 +219,7 @@ disabled = true
 scene_level = ExtResource( 16 )
 level = "08"
 
-[node name="4" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+[node name="9" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
 margin_left = 750.0
 margin_right = 900.0
 margin_bottom = 150.0
@@ -223,7 +227,7 @@ disabled = true
 scene_level = ExtResource( 16 )
 level = "09"
 
-[node name="5" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
+[node name="10" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
 margin_left = 1000.0
 margin_right = 1150.0
 margin_bottom = 150.0
@@ -239,13 +243,13 @@ size_flags_horizontal = 7
 size_flags_vertical = 0
 custom_constants/separation = 100
 
-[node name="1" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+[node name="11" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
 margin_bottom = 150.0
 disabled = true
 scene_level = ExtResource( 16 )
 level = "11"
 
-[node name="2" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+[node name="12" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
 margin_left = 250.0
 margin_right = 400.0
 margin_bottom = 150.0
@@ -253,7 +257,7 @@ disabled = true
 scene_level = ExtResource( 16 )
 level = "12"
 
-[node name="3" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+[node name="13" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
 margin_left = 500.0
 margin_right = 650.0
 margin_bottom = 150.0
@@ -261,7 +265,7 @@ disabled = true
 scene_level = ExtResource( 16 )
 level = "13"
 
-[node name="4" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+[node name="14" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
 margin_left = 750.0
 margin_right = 900.0
 margin_bottom = 150.0
@@ -269,7 +273,7 @@ disabled = true
 scene_level = ExtResource( 16 )
 level = "14"
 
-[node name="5" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
+[node name="15" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
 margin_left = 1000.0
 margin_right = 1150.0
 margin_bottom = 150.0

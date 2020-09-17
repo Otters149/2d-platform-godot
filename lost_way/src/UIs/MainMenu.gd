@@ -7,7 +7,7 @@ func _ready() -> void:
 		var first_data = {
 			"live": 3,
 			"coin": 0,
-			"level": 1_01,
+			"level": "1_01",
 			"last_time": OS.get_unix_time(),
 		}
 		saved.open("user://player_data.save", File.WRITE)

@@ -6,10 +6,10 @@
 [node name="Setting" type="TextureButton"]
 anchor_left = 1.0
 anchor_right = 1.0
-margin_left = -84.0
-margin_top = 20.0
-margin_right = -20.0
-margin_bottom = 64.0
+margin_left = -256.632
+margin_top = 60.4079
+margin_right = -56.6323
+margin_bottom = 260.408
 rect_min_size = Vector2( 64, 64 )
 texture_normal = ExtResource( 1 )
 texture_pressed = ExtResource( 2 )

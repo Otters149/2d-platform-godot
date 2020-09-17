@@ -2,11 +2,11 @@ extends Node2D
 
 
 export (PackedScene) var Player
-export var level:= '1_01'
+export var next_level:= '1_02'
 
 func _ready() -> void:
 	PlayerData.reset()
-	PlayerData.set_level(level)
+	PlayerData.set_level(next_level)
 	PlayerData.connect("death", self, "respawn")
 	
 	

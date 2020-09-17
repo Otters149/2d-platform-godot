@@ -648,7 +648,7 @@ extents = Vector2( 31631.3, 284.61 )
 [node name="Level1_04" type="Node2D"]
 script = ExtResource( 13 )
 Player = ExtResource( 19 )
-level = "1_05"
+next_level = "1_06"
 
 [node name="HUD" parent="." instance=ExtResource( 38 )]
 
