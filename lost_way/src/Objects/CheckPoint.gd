@@ -8,5 +8,6 @@ var is_entered: = false
 func _on_CheckPoint_body_entered(body: Node) -> void:
 	if not is_entered:
 		is_entered = true
+		$AudioStreamPlayer2D.play()
 		$AnimationPlayer.play("Entered")
 		emit_signal("checkpoint_enter", position)

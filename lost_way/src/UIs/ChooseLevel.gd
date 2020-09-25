@@ -16,7 +16,6 @@ func _ready() -> void:
 			var data = parse_json(saved.get_line())
 			var index = 0
 			for is_lock in data.values():
-				print(is_lock)
 				if index < season_list.size():
 					season_list[index].get_node("Locker").visible = true if is_lock == "CLOCK" else false
 					index += 1
@@ -35,10 +34,10 @@ func _ready() -> void:
 				season_list[season_index].get_node("Line1").get_node(str(index_level)).disabled = false
 				index_level += 1
 			while index_level <= 10:
-				season_list[season_index].get_node("Line2").get_node(str(index_level)).disabled = true
+				season_list[season_index].get_node("Line2").get_node(str(index_level)).disabled = false
 				index_level += 1
 			while index_level <= 15:
-				season_list[season_index].get_node("Line3").get_node(str(index_level)).disabled = true
+				season_list[season_index].get_node("Line3").get_node(str(index_level)).disabled = false
 				index_level += 1
 		
 		var index_level: = 1
@@ -46,10 +45,10 @@ func _ready() -> void:
 			season_list[current_season - 1].get_node("Container").get_node("Line1").get_node(str(index_level)).disabled = false
 			index_level += 1
 		while index_level <= 10 and index_level <= current_level:
-			season_list[current_season - 1].get_node("Container").get_node("Line2").get_node(str(index_level)).disabled = true
+			season_list[current_season - 1].get_node("Container").get_node("Line2").get_node(str(index_level)).disabled = false
 			index_level += 1
 		while index_level <= 15 and index_level <= current_level:
-			season_list[current_season - 1].get_node("Container").get_node("Line3").get_node(str(index_level)).disabled = true
+			season_list[current_season - 1].get_node("Container").get_node("Line3").get_node(str(index_level)).disabled = false
 			index_level += 1		
 
 	saved.close()

@@ -27,6 +27,8 @@ func set_animation(direction: Vector2) -> void:
 
 
 func _on_StomDetector_body_entered(body: PhysicsBody2D) -> void:
-	if body.global_position.y <= $StomDetector.global_position.y:
-		$CollisionShape2D.disabled = true
-		queue_free()
+	if body != null:
+		if body.global_position.y <= $StomDetector.global_position.y:
+			$AnimationPlayer.play("Die")
+			yield($AnimationPlayer, "animation_finished")
+			queue_free()

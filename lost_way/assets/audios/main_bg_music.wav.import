@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/main_bg_music.wav-a87094fa41669c428b7d9366081e2844.sample"
+
+[deps]
+
+source_file="res://assets/audios/main_bg_music.wav"
+dest_files=[ "res://.import/main_bg_music.wav-a87094fa41669c428b7d9366081e2844.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

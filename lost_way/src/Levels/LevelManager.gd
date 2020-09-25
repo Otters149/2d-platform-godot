@@ -24,3 +24,7 @@ func update_respawn(pos: Vector2):
 
 func _on_CheckPoint_checkpoint_enter(pos) -> void:
 	update_respawn(pos)
+
+
+func _on_Switch_activate(structure_name: String) -> void:
+	$BackObjects.get_node(structure_name).is_activate = true

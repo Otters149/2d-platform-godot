@@ -5,6 +5,8 @@ export var next_level: PackedScene
 
 
 func _on_Gate_body_entered(body: Node) -> void:
+	$AudioStreamPlayer2D.play()
+	fire_firework()
 	body.set_physics_process(false)
 	save_data()
 	next_level()
@@ -36,18 +38,53 @@ func save_data():
 		return
 	else:
 		var coin := 0
+		var level: = ""
 		
 		saved.open("user://player_data.save", File.READ)
 		while saved.get_position() < saved.get_len():
 			var data = parse_json(saved.get_line())
 			coin = int(data["coin"])
+			level = str(data["level"])
+			if is_new_level(PlayerData.get_level(), level):
+				level = PlayerData.get_level()
+			else:
+				level = level
 		saved.close()
 		
-		var dict = format_data(3, coin + PlayerData.get_coin(), PlayerData.get_level())
-		print( coin + PlayerData.get_coin())
+		var dict = format_data(3, coin + PlayerData.get_coin(), level)
 		
 		var save_game = File.new()
 		save_game.open("user://player_data.save", File.WRITE)
 		save_game.store_line(to_json(dict))
 		save_game.close()
 		
+
+func is_new_level(cur_level: String, data_level: String) -> bool:
+	var cur = cur_level.split("_")
+	var data = data_level.split("_")
+	# Compare season
+	if data[0] > cur[0]:
+		return false
+	else:
+		# Compare level
+		if data[1] > cur[1]:
+			return false
+	return true
+
+
+func random_pos() -> Vector2:
+	return Vector2(rand_range(-90, 90), rand_range(0, -200))
+
+
+func fire_firework():
+	$Firework.visible = true
+	$Firework.position = random_pos()
+	$Firework.start()
+	
+	$Firework2.visible = true
+	$Firework2.position = random_pos()
+	$Firework2.start()
+	
+	$Firework3.visible = true
+	$Firework3.position = random_pos()
+	$Firework3.start()

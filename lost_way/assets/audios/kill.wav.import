@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/kill.wav-c5735bc032cc36d1d135ee8aef54d01f.sample"
+
+[deps]
+
+source_file="res://assets/audios/kill.wav"
+dest_files=[ "res://.import/kill.wav-c5735bc032cc36d1d135ee8aef54d01f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

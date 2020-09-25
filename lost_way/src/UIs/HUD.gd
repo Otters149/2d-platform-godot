@@ -39,5 +39,7 @@ func ui_update_coin(coin):
 func ui_update_live(live):
 	$TopBar/VBoxContainer/LiveCount/LiveCount.text = 'x ' + str(live)
 	if live <= 0:
+		$Game_Over.position = PlayingData.get_death_pos()
+		$Game_Over.play()
 		$EndMenu.visible = true
 		set_process(false)

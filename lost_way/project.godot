@@ -27,6 +27,7 @@ config/icon="res://icon.png"
 [autoload]
 
 PlayerData="*res://src/AutoLoads/PlayerData.tscn"
+PlayingData="*res://src/AutoLoads/PlayingData.tscn"
 
 [display]
 
@@ -73,6 +74,7 @@ pointing/emulate_touch_from_mouse=true
 2d_physics/layer_7="deathzone"
 2d_physics/layer_8="checkpoint"
 2d_physics/layer_9="teleport"
+2d_physics/layer_10="traps"
 
 [rendering]
 

@@ -628,7 +628,7 @@ points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
 [sub_resource type="RectangleShape2D" id=20]
 extents = Vector2( 2256.11, 122.289 )
 
-[node name="Level01" type="Node2D"]
+[node name="Level1_01" type="Node2D"]
 script = ExtResource( 13 )
 Player = ExtResource( 19 )
 
@@ -649,15 +649,15 @@ __meta__ = {
 [node name="Midground" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
 format = 1
-tile_data = PoolIntArray( 589827, 6, 0, 589828, 0, 0, 786485, 9, 0, 786532, 536870921, 0, 917508, 11, 0, 917511, 10, 0, 917530, 536870923, 0, 917563, 10, 0, 917569, 5, 0, 917596, 536870922, 0, 917597, 536870923, 0, 983045, 11, 0, 983048, 2, 0, 983050, 8, 0, 983055, 8, 0, 983056, 8, 0, 983057, 8, 0, 983058, 7, 0, 983062, 8, 0, 983067, 536870923, 0, 983068, 11, 0, 983070, 4, 0, 983076, 536870914, 0, 983077, 536870916, 0, 983094, 7, 0, 983105, 2, 0, 983106, 11, 0, 983113, 8, 0, 983114, 7, 0, 983115, 8, 0, 983116, 6, 0, 983117, 8, 0, 983118, 8, 0, 983119, 7, 0, 983129, 536870923, 0, 983131, 536870914, 0, 983132, 536870923, 0, 983140, 536870918, 0, 983143, 7, 0, 1114140, 536870915, 0, 1114144, 536870915, 0 )
+tile_data = PoolIntArray( 786487, 9, 0, 852068, 9, 0, 917508, 11, 0, 917511, 10, 0, 917530, 536870923, 0, 917563, 10, 0, 917572, 5, 0, 917596, 536870922, 0, 917598, 11, 0, 983045, 11, 0, 983050, 8, 0, 983055, 8, 0, 983056, 8, 0, 983057, 8, 0, 983058, 7, 0, 983061, 11, 0, 983062, 8, 0, 983067, 11, 0, 983076, 2, 0, 983077, 536870916, 0, 983094, 7, 0, 983096, 11, 0, 983112, 11, 0, 983113, 8, 0, 983114, 7, 0, 983115, 8, 0, 983116, 11, 0, 983117, 8, 0, 983118, 8, 0, 983119, 7, 0, 983133, 2, 0, 983134, 2, 0, 983135, 11, 0, 983143, 7, 0, 1114140, 536870915, 0, 1114144, 536870915, 0 )
 
 [node name="Gate" parent="." instance=ExtResource( 17 )]
-position = Vector2( 5824.16, 853.879 )
+position = Vector2( 5824, 896 )
 next_level = ExtResource( 18 )
 
 [node name="World" type="TileMap" parent="."]
 tile_set = SubResource( 18 )
-cell_size = Vector2( 125, 125 )
+cell_size = Vector2( 128, 128 )
 collision_layer = 2
 collision_mask = 13
 format = 1
@@ -666,93 +666,93 @@ tile_data = PoolIntArray( 65531, 536870914, 0, 65532, 536870913, 0, 65533, 53687
 [node name="Coins" type="Node2D" parent="."]
 
 [node name="Coin" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 1125.03, 913.427 )
+position = Vector2( 1160, 960 )
 
 [node name="Coin18" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 1033.03, 913.427 )
+position = Vector2( 1068, 960 )
 
 [node name="Coin19" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 943.03, 913.427 )
+position = Vector2( 978, 960 )
 
 [node name="Coin20" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 861.03, 913.427 )
+position = Vector2( 896, 960 )
 
 [node name="Coin2" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 1205.64, 913.427 )
+position = Vector2( 1240.61, 960 )
 
 [node name="Coin3" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 1284.83, 913.427 )
+position = Vector2( 1319.8, 960 )
 
 [node name="Coin4" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 1369.69, 913.427 )
+position = Vector2( 1404.66, 960 )
 
 [node name="Coin5" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 1537.95, 786.536 )
+position = Vector2( 1565.76, 828.974 )
 
 [node name="Coin6" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 1636.37, 786.536 )
+position = Vector2( 1664.18, 828.974 )
 
 [node name="Coin7" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 1731.61, 786.536 )
+position = Vector2( 1759.42, 828.974 )
 
 [node name="Coin8" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3392, 832 )
+position = Vector2( 3456, 928 )
 
 [node name="Coin9" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3520, 960 )
+position = Vector2( 3648, 992 )
 
 [node name="Coin10" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3392, 960 )
+position = Vector2( 3520, 992 )
 
 [node name="Coin11" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3264, 832 )
+position = Vector2( 3328, 928 )
 
 [node name="Coin12" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3648, 960 )
+position = Vector2( 3776, 992 )
 
 [node name="Coin13" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3648, 832 )
+position = Vector2( 3712, 928 )
 
 [node name="Coin14" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3264, 960 )
+position = Vector2( 3392, 992 )
 
 [node name="Coin15" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3776, 832 )
+position = Vector2( 3840, 928 )
 
 [node name="Coin16" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3776, 960 )
+position = Vector2( 3904, 992 )
 
 [node name="Coin17" parent="Coins" instance=ExtResource( 16 )]
-position = Vector2( 3520, 832 )
+position = Vector2( 3584, 928 )
 
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Slug" parent="Enemies" instance=ExtResource( 15 )]
-position = Vector2( 2200.19, 967.084 )
+position = Vector2( 2273.21, 1002.01 )
 
 [node name="Slug2" parent="Enemies" instance=ExtResource( 15 )]
-position = Vector2( 3775.94, 967.733 )
+position = Vector2( 3840, 992 )
 
 [node name="Slug3" parent="Enemies" instance=ExtResource( 15 )]
-position = Vector2( 5297.71, 972.754 )
+position = Vector2( 5472, 976.438 )
 
 [node name="Slug4" parent="Enemies" instance=ExtResource( 15 )]
-position = Vector2( 5456.03, 972.316 )
+position = Vector2( 5630.32, 976 )
 
 [node name="Player" parent="." instance=ExtResource( 19 )]
-position = Vector2( 519.369, 728.771 )
+position = Vector2( 518.424, 725.355 )
 
 [node name="Foreground" type="TileMap" parent="."]
 tile_set = SubResource( 19 )
 format = 1
-tile_data = PoolIntArray( 524383, 6, 0, 655353, 4, 0, 589919, 4, 0, 720940, 536870916, 0, 786433, 5, 0, 917497, 3, 0, 917501, 4, 0, 917502, 4, 0, 852012, 4, 0, 852063, 4, 0, 917547, 6, 0, 917599, 6, 0, 1048571, 3, 0, 1048574, 5, 0, 983064, 536870916, 0, 983077, 4, 0, 983082, 536870916, 0, 1114106, 4, 0, 1048601, 4, 0, 1048613, 6, 0, 1114112, 3, 0, 1114126, 4, 0, 1114127, 3, 0, 1114135, 6, 0, 1114136, 4, 0, 1114154, 5, 0, 1114167, 536870918, 0, 1114178, 5, 0, 1114215, 3, 0, 1179673, 6, 0, 1179704, 536870918, 0, 1179715, 3, 0, 1179735, 6, 0 )
+tile_data = PoolIntArray( 524386, 3, 0, 655457, 5, 0, 786433, 5, 0, 786530, 3, 0, 917497, 3, 0, 917502, 4, 0, 852012, 4, 0, 917547, 6, 0, 1048571, 3, 0, 1048574, 5, 0, 983082, 536870916, 0, 1114106, 4, 0, 1048601, 4, 0, 1114112, 3, 0, 1114126, 4, 0, 1114127, 3, 0, 1114135, 6, 0, 1114154, 5, 0, 1114167, 536870918, 0, 1114178, 5, 0, 1114215, 3, 0, 1179673, 6, 0, 1179679, 3, 0, 1179704, 536870918, 0, 1179715, 3, 0, 1179735, 6, 0, 1179743, 5, 0 )
 
 [node name="DeathZone" type="Area2D" parent="."]
 position = Vector2( 4006.04, 1382.35 )
 collision_layer = 64
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DeathZone"]
-position = Vector2( 10.6907, 222.312 )
+position = Vector2( 25.96, 25.65 )
 shape = SubResource( 20 )
 
 [node name="RespawnPosition" type="Node2D" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://src/UIs/Components/LevelButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/sprites/tiles/horror/background/BG.png" type="Texture" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://src/Levels/Level1_03.tscn" type="PackedScene" id=17]
 [ext_resource path="res://src/Levels/Level1_04.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/Levels/Level1_05.tscn" type="PackedScene" id=19]
+[ext_resource path="res://src/Levels/Level1_06.tscn" type="PackedScene" id=20]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -200,7 +201,7 @@ custom_constants/separation = 100
 [node name="6" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
 margin_bottom = 150.0
 disabled = true
-scene_level = ExtResource( 16 )
+scene_level = ExtResource( 20 )
 level = "06"
 
 [node name="7" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
