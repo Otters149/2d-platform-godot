@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
+[ext_resource path="res://src/Sfx/WallLightOccluder.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (14).png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (16).png" type="Texture" id=3]
 [ext_resource path="res://src/Objects/Platform.gd" type="Script" id=4]
@@ -72,5 +73,10 @@ collision_mask = 5
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ActorDetector"]
 position = Vector2( 0, 4.62492 )
 shape = SubResource( 4 )
+
+[node name="WallLightOccluder" parent="." instance=ExtResource( 1 )]
+position = Vector2( 128, 0 )
+rotation = 1.5708
+length_scale = 2
 [connection signal="body_entered" from="ActorDetector" to="." method="_on_ActorDetector_body_entered"]
 [connection signal="body_exited" from="ActorDetector" to="." method="_on_ActorDetector_body_exited"]

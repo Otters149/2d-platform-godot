@@ -3,7 +3,7 @@
 [ext_resource path="res://assets/sprites/tiles/horror/background/BG.png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/GUI/Button_6.png" type="Texture" id=2]
 [ext_resource path="res://assets/sprites/player/dog/run/Run (8).png" type="Texture" id=3]
-[ext_resource path="res://assets/sprites/slug/slug_1.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/snake/snake_crawl_01.png" type="Texture" id=4]
 [ext_resource path="res://assets/sprites/worm/Monster4_01.png" type="Texture" id=5]
 [ext_resource path="res://src/UIs/Components/SettingButton.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/sprites/GUI/Button_4.png" type="Texture" id=7]
@@ -60,7 +60,7 @@ scale = Vector2( 0.351006, 0.399168 )
 texture = ExtResource( 3 )
 
 [node name="Monster4_01" type="Sprite" parent="CanvasLayer/Background"]
-position = Vector2( 1792, 832 )
+position = Vector2( 1763.41, 766.41 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 5 )
 
@@ -70,9 +70,9 @@ position = Vector2( 1472, 704 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 5 )
 
-[node name="slug_1" type="Sprite" parent="CanvasLayer/Background"]
-position = Vector2( 1472, 960 )
-scale = Vector2( 0.694444, 0.5 )
+[node name="snake_crawl_01" type="Sprite" parent="CanvasLayer/Background"]
+position = Vector2( 1472.02, 885.605 )
+scale = Vector2( 0.75, 0.75 )
 texture = ExtResource( 4 )
 
 [node name="GameTitle" parent="CanvasLayer" instance=ExtResource( 10 )]

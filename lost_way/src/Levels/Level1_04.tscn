@@ -676,7 +676,7 @@ tile_data = PoolIntArray( -785963, 5, 0, -720434, 11, 0, -720431, 11, 0, -654961
 [node name="CheckPoints" type="Node2D" parent="."]
 
 [node name="CheckPoint" parent="CheckPoints" instance=ExtResource( 15 )]
-position = Vector2( 5152, 384 )
+position = Vector2( 8736, 128 )
 
 [node name="CheckPoint2" parent="CheckPoints" instance=ExtResource( 15 )]
 position = Vector2( 24692.2, 0 )
@@ -1296,7 +1296,7 @@ position = Vector2( 32384, 224 )
 speed = Vector2( 100, 900 )
 
 [node name="Player" parent="." instance=ExtResource( 19 )]
-position = Vector2( 22368, 544 )
+position = Vector2( 352, 576 )
 
 [node name="Foreground" type="TileMap" parent="."]
 tile_set = SubResource( 19 )

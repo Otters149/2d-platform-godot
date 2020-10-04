@@ -1825,10 +1825,6 @@ speed = Vector2( -90, 900 )
 [node name="Caterpillar5" parent="Enemies" instance=ExtResource( 42 )]
 position = Vector2( 37392, -288 )
 
-[node name="Caterpillar6" parent="Enemies" instance=ExtResource( 42 )]
-position = Vector2( 38656, -432 )
-speed = Vector2( -90, 900 )
-
 [node name="Snake5" parent="Enemies" instance=ExtResource( 15 )]
 position = Vector2( 39088, 208 )
 

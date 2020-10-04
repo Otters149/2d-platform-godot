@@ -21,6 +21,7 @@ func run_cycle():
 	yield($AnimationPlayer, "animation_finished")
 	yield(get_tree().create_timer(2), "timeout")
 	$AnimationPlayer.play("bump")
+	$AudioStreamPlayer2D.play()
 	yield($AnimationPlayer, "animation_finished")
 	yield(get_tree().create_timer(0.5), "timeout")
 	is_cycle_done = true

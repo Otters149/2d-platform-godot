@@ -1,0 +1,1369 @@
+[gd_scene load_steps=64 format=2]
+
+[ext_resource path="res://assets/sprites/tiles/horror/background/BG.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/Bush (2).png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/Skeleton.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/ArrowSign.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/Tree.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/Sign.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/Bush (1).png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/Crate.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (9).png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/TombStone (1).png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/DeadBush.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/tiles/horror/objects/TombStone (2).png" type="Texture" id=12]
+[ext_resource path="res://src/Levels/LevelManager.gd" type="Script" id=13]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (8).png" type="Texture" id=14]
+[ext_resource path="res://src/Objects/Falldown.tscn" type="PackedScene" id=15]
+[ext_resource path="res://src/Objects/Platform.tscn" type="PackedScene" id=16]
+[ext_resource path="res://src/Objects/Gate.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Bone (1).png" type="Texture" id=18]
+[ext_resource path="res://src/Actors/Player.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Bone (3).png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (10).png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (13).png" type="Texture" id=22]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (16).png" type="Texture" id=23]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (7).png" type="Texture" id=24]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Bone (2).png" type="Texture" id=25]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (12).png" type="Texture" id=26]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Bone (4).png" type="Texture" id=27]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (2).png" type="Texture" id=28]
+[ext_resource path="res://src/Objects/Mushroom.tscn" type="PackedScene" id=29]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (3).png" type="Texture" id=30]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (5).png" type="Texture" id=31]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (15).png" type="Texture" id=32]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (6).png" type="Texture" id=33]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (14).png" type="Texture" id=34]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (1).png" type="Texture" id=35]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (11).png" type="Texture" id=36]
+[ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (4).png" type="Texture" id=37]
+[ext_resource path="res://src/UIs/HUD.tscn" type="PackedScene" id=38]
+[ext_resource path="res://src/Objects/Structures/StoneStructure.tscn" type="PackedScene" id=39]
+[ext_resource path="res://src/Objects/CheckPoint.tscn" type="PackedScene" id=40]
+[ext_resource path="res://src/Objects/Teleport.tscn" type="PackedScene" id=41]
+[ext_resource path="res://src/Objects/Switch.tscn" type="PackedScene" id=42]
+[ext_resource path="res://src/Sfx/WallLightOccluder.tscn" type="PackedScene" id=43]
+
+[sub_resource type="TileSet" id=1]
+0/name = "Tree.png 0"
+0/texture = ExtResource( 5 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 280, 240 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "TombStone (2).png 1"
+1/texture = ExtResource( 12 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 56, 72 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "TombStone (1).png 2"
+2/texture = ExtResource( 10 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 56, 56 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Skeleton.png 3"
+3/texture = ExtResource( 3 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 104, 48 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Sign.png 4"
+4/texture = ExtResource( 6 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 88, 96 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "DeadBush.png 5"
+5/texture = ExtResource( 11 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 128, 72 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Crate.png 6"
+6/texture = ExtResource( 8 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 104, 104 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Bush (2).png 7"
+7/texture = ExtResource( 2 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 104, 64 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "Bush (1).png 8"
+8/texture = ExtResource( 7 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 184, 88 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "ArrowSign.png 9"
+9/texture = ExtResource( 4 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 88, 88 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=7]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 96, 96, 64, 80, 48, 64, 16, 48, 0, 32 )
+
+[sub_resource type="ConvexPolygonShape2D" id=8]
+points = PoolVector2Array( 128, 96, 0, 96, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=9]
+points = PoolVector2Array( 0, 0, 128, 0, 128, 32, 112, 48, 80, 64, 64, 80, 32, 96, 0, 96 )
+
+[sub_resource type="ConvexPolygonShape2D" id=10]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=11]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=12]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=14]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=16]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="ConvexPolygonShape2D" id=17]
+points = PoolVector2Array( 128, 128, 0, 128, 0, 0, 128, 0 )
+
+[sub_resource type="TileSet" id=18]
+0/name = "Tile (1).png 0"
+0/texture = ExtResource( 35 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 2 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Tile (2).png 1"
+1/texture = ExtResource( 28 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 128, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 3 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "Tile (3).png 2"
+2/texture = ExtResource( 30 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 10 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "Tile (4).png 3"
+3/texture = ExtResource( 37 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 11 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 11 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "Tile (5).png 4"
+4/texture = ExtResource( 31 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 128, 128 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 12 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 12 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "Tile (6).png 5"
+5/texture = ExtResource( 33 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 128, 128 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 13 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "Tile (7).png 6"
+6/texture = ExtResource( 24 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 128, 128 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 14 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 14 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+7/name = "Tile (8).png 7"
+7/texture = ExtResource( 14 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 128, 128 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape = SubResource( 15 )
+7/shape_one_way = false
+7/shape_one_way_margin = 1.0
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+7/z_index = 0
+8/name = "Tile (9).png 8"
+8/texture = ExtResource( 9 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 128, 128 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape = SubResource( 16 )
+8/shape_one_way = false
+8/shape_one_way_margin = 1.0
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 16 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+8/z_index = 0
+9/name = "Tile (10).png 9"
+9/texture = ExtResource( 21 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 128, 128 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape = SubResource( 17 )
+9/shape_one_way = false
+9/shape_one_way_margin = 1.0
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 17 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+9/z_index = 0
+10/name = "Tile (11).png 10"
+10/texture = ExtResource( 36 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 128, 128 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape = SubResource( 4 )
+10/shape_one_way = false
+10/shape_one_way_margin = 1.0
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+10/z_index = 0
+11/name = "Tile (12).png 11"
+11/texture = ExtResource( 26 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 128, 128 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape = SubResource( 5 )
+11/shape_one_way = false
+11/shape_one_way_margin = 1.0
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+11/z_index = 0
+12/name = "Tile (13).png 12"
+12/texture = ExtResource( 22 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 128, 128 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape = SubResource( 6 )
+12/shape_one_way = false
+12/shape_one_way_margin = 1.0
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+12/z_index = 0
+13/name = "Tile (14).png 13"
+13/texture = ExtResource( 34 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 128, 96 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape = SubResource( 7 )
+13/shape_one_way = false
+13/shape_one_way_margin = 1.0
+13/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 7 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+13/z_index = 0
+14/name = "Tile (15).png 14"
+14/texture = ExtResource( 32 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 128, 96 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape = SubResource( 8 )
+14/shape_one_way = false
+14/shape_one_way_margin = 1.0
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 8 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+14/z_index = 0
+15/name = "Tile (16).png 15"
+15/texture = ExtResource( 23 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 128, 96 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape = SubResource( 9 )
+15/shape_one_way = false
+15/shape_one_way_margin = 1.0
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+15/z_index = 0
+
+[sub_resource type="TileSet" id=19]
+0/name = "Bone (1).png 0"
+0/texture = ExtResource( 18 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 16, 32, 88, 88 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Bone (2).png 1"
+1/texture = ExtResource( 25 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 48, 40, 56, 56 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Bone (3).png 2"
+2/texture = ExtResource( 20 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 24, 40, 88, 72 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Bone (4).png 3"
+3/texture = ExtResource( 27 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 24, 40, 72, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 23696, 112 )
+
+[node name="Level1_14" type="Node2D"]
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_vertical_guides_": [ 40880.0 ]
+}
+Player = ExtResource( 19 )
+next_level = "1_15"
+
+[node name="HUD" parent="." instance=ExtResource( 38 )]
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -100
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Midground" type="TileMap" parent="."]
+visible = false
+tile_set = SubResource( 1 )
+cell_size = Vector2( 8, 8 )
+format = 1
+
+[node name="CheckPoints" type="Node2D" parent="."]
+
+[node name="CheckPoint" parent="CheckPoints" instance=ExtResource( 40 )]
+position = Vector2( 18064, 784 )
+
+[node name="CheckPoint2" parent="CheckPoints" instance=ExtResource( 40 )]
+position = Vector2( 34192, 912 )
+
+[node name="Gate" parent="." instance=ExtResource( 17 )]
+position = Vector2( 39440, 912 )
+
+[node name="BackTraps" type="Node2D" parent="."]
+
+[node name="BackObjects" type="Node2D" parent="."]
+
+[node name="Mushroom" parent="BackObjects" instance=ExtResource( 29 )]
+position = Vector2( -688, 848 )
+impluse = -1800.0
+
+[node name="Mushroom2" parent="BackObjects" instance=ExtResource( 29 )]
+position = Vector2( 7984, 848 )
+impluse = -1800.0
+
+[node name="Mushroom3" parent="BackObjects" instance=ExtResource( 29 )]
+position = Vector2( 13744, 976 )
+impluse = -2200.0
+
+[node name="Mushroom4" parent="BackObjects" instance=ExtResource( 29 )]
+position = Vector2( 19760, 848 )
+impluse = -2800.0
+
+[node name="Mushroom5" parent="BackObjects" instance=ExtResource( 29 )]
+position = Vector2( 17488, -176 )
+
+[node name="Mushroom6" parent="BackObjects" instance=ExtResource( 29 )]
+position = Vector2( 33072, 976 )
+impluse = -1500.0
+
+[node name="StoneStructure" parent="BackObjects" instance=ExtResource( 39 )]
+position = Vector2( 36768, 976 )
+
+[node name="World" type="TileMap" parent="."]
+tile_set = SubResource( 18 )
+cell_size = Vector2( 128, 128 )
+collision_layer = 2
+collision_mask = 13
+format = 1
+tile_data = PoolIntArray( -1375968, 0, 0, -1375967, 1, 0, -1375966, 1, 0, -1375965, 1, 0, -1375964, 1, 0, -1375963, 1, 0, -1375962, 1, 0, -1375961, 1, 0, -1375960, 1, 0, -1375959, 1, 0, -1375958, 1, 0, -1375957, 1, 0, -1375956, 1, 0, -1375955, 1, 0, -1375954, 1, 0, -1375953, 1, 0, -1375952, 1, 0, -1375951, 1, 0, -1375950, 1, 0, -1375949, 1, 0, -1375948, 1, 0, -1375947, 1, 0, -1375946, 1, 0, -1375945, 2, 0, -1310432, 3, 0, -1310431, 4, 0, -1310430, 8, 0, -1310429, 8, 0, -1310428, 8, 0, -1310427, 8, 0, -1310426, 8, 0, -1310425, 8, 0, -1310424, 8, 0, -1310423, 8, 0, -1310422, 8, 0, -1310421, 8, 0, -1310420, 8, 0, -1310419, 8, 0, -1310418, 8, 0, -1310417, 8, 0, -1310416, 8, 0, -1310415, 8, 0, -1310414, 8, 0, -1310413, 8, 0, -1310412, 8, 0, -1310411, 8, 0, -1310410, 4, 0, -1310409, 5, 0, -1244896, 3, 0, -1244895, 5, 0, -1244874, 3, 0, -1244873, 5, 0, -1179360, 3, 0, -1179359, 5, 0, -1179352, 13, 0, -1179351, 14, 0, -1179350, 14, 0, -1179349, 15, 0, -1179342, 13, 0, -1179341, 14, 0, -1179340, 14, 0, -1179339, 15, 0, -1179338, 3, 0, -1179337, 5, 0, -1113824, 3, 0, -1113823, 5, 0, -1113821, 13, 0, -1113820, 14, 0, -1113819, 14, 0, -1113818, 15, 0, -1113811, 13, 0, -1113810, 14, 0, -1113809, 14, 0, -1113808, 15, 0, -1113802, 3, 0, -1113801, 5, 0, -1048288, 3, 0, -1048287, 5, 0, -1048266, 3, 0, -1048265, 5, 0, -982752, 3, 0, -982751, 5, 0, -982750, 13, 0, -982749, 14, 0, -982748, 14, 0, -982747, 15, 0, -982740, 13, 0, -982739, 14, 0, -982738, 14, 0, -982737, 15, 0, -982730, 3, 0, -982729, 5, 0, -917216, 3, 0, -917215, 5, 0, -917209, 13, 0, -917208, 14, 0, -917207, 14, 0, -917206, 15, 0, -917199, 13, 0, -917198, 14, 0, -917197, 14, 0, -917196, 15, 0, -917194, 3, 0, -917193, 5, 0, -851835, 0, 0, -851834, 1, 0, -851833, 1, 0, -851832, 1, 0, -851831, 1, 0, -851830, 1, 0, -851829, 1, 0, -851828, 1, 0, -851827, 1, 0, -851826, 1, 0, -851825, 1, 0, -851824, 1, 0, -851823, 1, 0, -851822, 1, 0, -851821, 1, 0, -851820, 1, 0, -851819, 1, 0, -851818, 1, 0, -851817, 1, 0, -851816, 1, 0, -851815, 1, 0, -851814, 1, 0, -851813, 1, 0, -851812, 1, 0, -851811, 1, 0, -851810, 1, 0, -851809, 1, 0, -851808, 2, 0, -851680, 3, 0, -851679, 5, 0, -851658, 3, 0, -851657, 5, 0, -786299, 3, 0, -786298, 4, 0, -786297, 4, 0, -786296, 4, 0, -786295, 4, 0, -786294, 4, 0, -786293, 4, 0, -786292, 4, 0, -786291, 4, 0, -786290, 4, 0, -786289, 4, 0, -786288, 4, 0, -786287, 4, 0, -786286, 4, 0, -786285, 4, 0, -786284, 4, 0, -786283, 4, 0, -786282, 4, 0, -786281, 4, 0, -786280, 4, 0, -786279, 4, 0, -786278, 4, 0, -786277, 4, 0, -786276, 4, 0, -786275, 4, 0, -786274, 4, 0, -786273, 4, 0, -786272, 5, 0, -786144, 3, 0, -786143, 5, 0, -786122, 3, 0, -786121, 5, 0, -720763, 3, 0, -720762, 4, 0, -720761, 4, 0, -720760, 8, 0, -720759, 8, 0, -720758, 8, 0, -720757, 8, 0, -720756, 8, 0, -720755, 8, 0, -720754, 8, 0, -720753, 8, 0, -720752, 8, 0, -720751, 8, 0, -720750, 8, 0, -720749, 8, 0, -720748, 8, 0, -720747, 8, 0, -720746, 8, 0, -720745, 8, 0, -720744, 8, 0, -720743, 8, 0, -720742, 8, 0, -720741, 8, 0, -720740, 8, 0, -720739, 8, 0, -720738, 8, 0, -720737, 8, 0, -720736, 12, 0, -720608, 3, 0, -720607, 9, 0, -720606, 10, 0, -720605, 1, 0, -720604, 1, 0, -720603, 1, 0, -720602, 1, 0, -720601, 1, 0, -720600, 1, 0, -720599, 1, 0, -720598, 1, 0, -720597, 1, 0, -720596, 1, 0, -720595, 1, 0, -720594, 1, 0, -720593, 1, 0, -720592, 1, 0, -720591, 1, 0, -720590, 1, 0, -720589, 1, 0, -720588, 1, 0, -720587, 6, 0, -720586, 7, 0, -720585, 5, 0, -655227, 3, 0, -655226, 4, 0, -655225, 5, 0, -655072, 11, 0, -655071, 8, 0, -655070, 8, 0, -655069, 8, 0, -655068, 8, 0, -655067, 8, 0, -655066, 8, 0, -655065, 8, 0, -655064, 8, 0, -655063, 8, 0, -655062, 8, 0, -655061, 8, 0, -655060, 8, 0, -655059, 8, 0, -655058, 8, 0, -655057, 8, 0, -655056, 8, 0, -655055, 8, 0, -655054, 8, 0, -655053, 8, 0, -655052, 8, 0, -655051, 8, 0, -655050, 8, 0, -655049, 12, 0, -589691, 3, 0, -589690, 4, 0, -589689, 5, 0, -524155, 3, 0, -524154, 4, 0, -524153, 5, 0, -458619, 3, 0, -458618, 4, 0, -458617, 5, 0, -458612, 0, 0, -458611, 1, 0, -458610, 1, 0, -458609, 1, 0, -458608, 1, 0, -458607, 1, 0, -458606, 1, 0, -458605, 1, 0, -458604, 1, 0, -458603, 1, 0, -458602, 1, 0, -458601, 1, 0, -458600, 1, 0, -458599, 1, 0, -458598, 1, 0, -458597, 1, 0, -458596, 1, 0, -458595, 1, 0, -458594, 1, 0, -458593, 1, 0, -458592, 2, 0, -393083, 3, 0, -393082, 4, 0, -393081, 5, 0, -393077, 0, 0, -393076, 7, 0, -393075, 8, 0, -393074, 8, 0, -393073, 8, 0, -393072, 8, 0, -393071, 8, 0, -393070, 8, 0, -393069, 8, 0, -393068, 8, 0, -393067, 8, 0, -393066, 8, 0, -393065, 8, 0, -393064, 8, 0, -393063, 8, 0, -393062, 8, 0, -393061, 4, 0, -393060, 4, 0, -393059, 4, 0, -393058, 4, 0, -393057, 4, 0, -393056, 5, 0, -393039, 0, 0, -393038, 2, 0, -327547, 3, 0, -327546, 4, 0, -327545, 5, 0, -327542, 0, 0, -327541, 7, 0, -327540, 12, 0, -327525, 3, 0, -327524, 4, 0, -327523, 4, 0, -327522, 4, 0, -327521, 4, 0, -327520, 5, 0, -327503, 3, 0, -327502, 5, 0, -262011, 3, 0, -262010, 4, 0, -262009, 5, 0, -262006, 11, 0, -262005, 12, 0, -261989, 3, 0, -261988, 4, 0, -261987, 4, 0, -261986, 4, 0, -261985, 4, 0, -261984, 5, 0, -261967, 3, 0, -261966, 5, 0, -196475, 3, 0, -196474, 4, 0, -196473, 5, 0, -196453, 3, 0, -196452, 4, 0, -196451, 4, 0, -196450, 4, 0, -196449, 4, 0, -196448, 5, 0, -196431, 3, 0, -196430, 5, 0, -130939, 3, 0, -130938, 4, 0, -130937, 5, 0, -130917, 3, 0, -130916, 4, 0, -130915, 4, 0, -130914, 4, 0, -130913, 4, 0, -130912, 5, 0, -130895, 3, 0, -130894, 5, 0, -65403, 3, 0, -65402, 4, 0, -65401, 9, 0, -65400, 10, 0, -65399, 2, 0, -65397, 0, 0, -65396, 1, 0, -65395, 1, 0, -65394, 1, 0, -65393, 2, 0, -65390, 0, 0, -65389, 1, 0, -65388, 1, 0, -65387, 1, 0, -65386, 1, 0, -65385, 1, 0, -65384, 2, 0, -65381, 3, 0, -65380, 4, 0, -65379, 4, 0, -65378, 4, 0, -65377, 4, 0, -65376, 5, 0, -65359, 3, 0, -65358, 5, 0, 65527, 0, 0, 65528, 1, 0, 65529, 2, 0, 133, 3, 0, 134, 4, 0, 135, 4, 0, 136, 4, 0, 137, 5, 0, 139, 3, 0, 140, 4, 0, 141, 4, 0, 142, 4, 0, 143, 5, 0, 146, 3, 0, 147, 4, 0, 148, 4, 0, 149, 4, 0, 150, 4, 0, 151, 4, 0, 152, 5, 0, 155, 3, 0, 156, 4, 0, 157, 4, 0, 158, 4, 0, 159, 4, 0, 160, 5, 0, 177, 3, 0, 178, 5, 0, 268, 0, 0, 269, 1, 0, 270, 1, 0, 271, 1, 0, 272, 2, 0, 131062, 0, 0, 131063, 7, 0, 131064, 8, 0, 131065, 12, 0, 65669, 11, 0, 65670, 8, 0, 65671, 8, 0, 65672, 8, 0, 65673, 12, 0, 65675, 3, 0, 65676, 4, 0, 65677, 4, 0, 65678, 4, 0, 65679, 5, 0, 65682, 3, 0, 65683, 4, 0, 65684, 4, 0, 65685, 4, 0, 65686, 4, 0, 65687, 4, 0, 65688, 5, 0, 65691, 3, 0, 65692, 4, 0, 65693, 4, 0, 65694, 4, 0, 65695, 4, 0, 65696, 5, 0, 65713, 3, 0, 65714, 5, 0, 65804, 3, 0, 65805, 4, 0, 65806, 4, 0, 65807, 4, 0, 65808, 5, 0, 65813, 0, 0, 65814, 1, 0, 65815, 1, 0, 65816, 1, 0, 65817, 1, 0, 65818, 1, 0, 65819, 1, 0, 65820, 1, 0, 65821, 1, 0, 65822, 2, 0, 65845, 0, 0, 65846, 1, 0, 65847, 1, 0, 65848, 1, 0, 65849, 1, 0, 65850, 1, 0, 65851, 1, 0, 65852, 1, 0, 65853, 1, 0, 65854, 1, 0, 65855, 1, 0, 65856, 1, 0, 196598, 3, 0, 196599, 5, 0, 131211, 3, 0, 131212, 4, 0, 131213, 4, 0, 131214, 4, 0, 131215, 5, 0, 131218, 3, 0, 131219, 4, 0, 131220, 4, 0, 131221, 4, 0, 131222, 4, 0, 131223, 4, 0, 131224, 5, 0, 131227, 3, 0, 131228, 4, 0, 131229, 4, 0, 131230, 4, 0, 131231, 4, 0, 131232, 5, 0, 131249, 11, 0, 131250, 12, 0, 131340, 3, 0, 131341, 4, 0, 131342, 4, 0, 131343, 4, 0, 131344, 5, 0, 131349, 3, 0, 131350, 4, 0, 131351, 4, 0, 131352, 4, 0, 131353, 4, 0, 131354, 4, 0, 131355, 4, 0, 131356, 4, 0, 131357, 4, 0, 131358, 5, 0, 131381, 3, 0, 131382, 4, 0, 131383, 4, 0, 131384, 4, 0, 131385, 4, 0, 131386, 4, 0, 131387, 4, 0, 131388, 4, 0, 131389, 4, 0, 131390, 4, 0, 131391, 4, 0, 131392, 5, 0, 262134, 3, 0, 262135, 9, 0, 262136, 2, 0, 196645, 0, 0, 196646, 1, 0, 196647, 2, 0, 196706, 0, 0, 196707, 1, 0, 196708, 1, 0, 196709, 1, 0, 196710, 1, 0, 196711, 1, 0, 196712, 1, 0, 196713, 2, 0, 196716, 0, 0, 196717, 1, 0, 196718, 1, 0, 196719, 1, 0, 196720, 1, 0, 196721, 1, 0, 196722, 1, 0, 196723, 1, 0, 196724, 1, 0, 196725, 1, 0, 196726, 1, 0, 196727, 2, 0, 196747, 11, 0, 196748, 8, 0, 196749, 8, 0, 196750, 8, 0, 196751, 12, 0, 196754, 11, 0, 196755, 8, 0, 196756, 8, 0, 196757, 8, 0, 196758, 8, 0, 196759, 8, 0, 196760, 12, 0, 196763, 3, 0, 196764, 4, 0, 196765, 4, 0, 196766, 4, 0, 196767, 4, 0, 196768, 5, 0, 196840, 0, 0, 196841, 2, 0, 196846, 0, 0, 196847, 1, 0, 196848, 1, 0, 196849, 1, 0, 196850, 1, 0, 196851, 1, 0, 196852, 1, 0, 196853, 1, 0, 196854, 1, 0, 196855, 2, 0, 196858, 0, 0, 196859, 1, 0, 196860, 1, 0, 196861, 1, 0, 196862, 1, 0, 196863, 1, 0, 196864, 1, 0, 196865, 1, 0, 196866, 1, 0, 196867, 1, 0, 196868, 1, 0, 196869, 1, 0, 196870, 1, 0, 196871, 1, 0, 196872, 1, 0, 196873, 2, 0, 196876, 3, 0, 196877, 4, 0, 196878, 4, 0, 196879, 4, 0, 196880, 5, 0, 196885, 11, 0, 196886, 8, 0, 196887, 8, 0, 196888, 8, 0, 196889, 8, 0, 196890, 8, 0, 196891, 8, 0, 196892, 8, 0, 196893, 8, 0, 196894, 12, 0, 196917, 3, 0, 196918, 4, 0, 196919, 4, 0, 196920, 4, 0, 196921, 4, 0, 196922, 4, 0, 196923, 4, 0, 196924, 4, 0, 196925, 4, 0, 196926, 4, 0, 196927, 4, 0, 196928, 5, 0, 327670, 3, 0, 327671, 4, 0, 327672, 9, 0, 327673, 2, 0, 327676, 0, 0, 327677, 1, 0, 327678, 1, 0, 327679, 2, 0, 262172, 0, 0, 262173, 1, 0, 262174, 1, 0, 262175, 1, 0, 262176, 1, 0, 262177, 1, 0, 262178, 1, 0, 262179, 1, 0, 262180, 6, 0, 262181, 7, 0, 262182, 4, 0, 262183, 9, 0, 262184, 10, 0, 262185, 1, 0, 262186, 1, 0, 262187, 1, 0, 262188, 1, 0, 262189, 1, 0, 262190, 1, 0, 262191, 1, 0, 262192, 2, 0, 262207, 0, 0, 262208, 1, 0, 262209, 2, 0, 262239, 0, 0, 262240, 2, 0, 262242, 3, 0, 262243, 4, 0, 262244, 4, 0, 262245, 4, 0, 262246, 4, 0, 262247, 4, 0, 262248, 4, 0, 262249, 5, 0, 262252, 3, 0, 262253, 4, 0, 262254, 4, 0, 262255, 4, 0, 262256, 8, 0, 262257, 8, 0, 262258, 8, 0, 262259, 8, 0, 262260, 8, 0, 262261, 8, 0, 262262, 8, 0, 262263, 12, 0, 262299, 3, 0, 262300, 4, 0, 262301, 4, 0, 262302, 4, 0, 262303, 4, 0, 262304, 5, 0, 262375, 0, 0, 262376, 7, 0, 262377, 5, 0, 262380, 0, 0, 262381, 6, 0, 262382, 7, 0, 262383, 4, 0, 262384, 4, 0, 262385, 4, 0, 262386, 4, 0, 262387, 4, 0, 262388, 4, 0, 262389, 4, 0, 262390, 4, 0, 262391, 5, 0, 262394, 3, 0, 262395, 4, 0, 262396, 4, 0, 262397, 4, 0, 262398, 4, 0, 262399, 4, 0, 262400, 4, 0, 262401, 4, 0, 262402, 8, 0, 262403, 8, 0, 262404, 8, 0, 262405, 8, 0, 262406, 8, 0, 262407, 8, 0, 262408, 8, 0, 262409, 12, 0, 262412, 3, 0, 262413, 4, 0, 262414, 4, 0, 262415, 4, 0, 262416, 12, 0, 262453, 11, 0, 262454, 8, 0, 262455, 8, 0, 262456, 8, 0, 262457, 4, 0, 262458, 4, 0, 262459, 4, 0, 262460, 4, 0, 262461, 4, 0, 262462, 4, 0, 262463, 4, 0, 262464, 5, 0, 393196, 0, 0, 393197, 1, 0, 393198, 1, 0, 393199, 1, 0, 393200, 1, 0, 393201, 1, 0, 393202, 1, 0, 393203, 1, 0, 393204, 1, 0, 393205, 6, 0, 393206, 7, 0, 393207, 4, 0, 393208, 4, 0, 393209, 5, 0, 393212, 11, 0, 393213, 8, 0, 393214, 8, 0, 393215, 12, 0, 327695, 0, 0, 327696, 2, 0, 327707, 0, 0, 327708, 7, 0, 327709, 4, 0, 327710, 4, 0, 327711, 4, 0, 327712, 4, 0, 327713, 4, 0, 327714, 4, 0, 327715, 4, 0, 327716, 4, 0, 327717, 4, 0, 327718, 4, 0, 327719, 4, 0, 327720, 4, 0, 327721, 4, 0, 327722, 4, 0, 327723, 4, 0, 327724, 4, 0, 327725, 4, 0, 327726, 4, 0, 327727, 4, 0, 327728, 9, 0, 327729, 2, 0, 327743, 3, 0, 327744, 4, 0, 327745, 5, 0, 327772, 0, 0, 327773, 2, 0, 327775, 3, 0, 327776, 5, 0, 327778, 3, 0, 327779, 4, 0, 327780, 4, 0, 327781, 4, 0, 327782, 4, 0, 327783, 4, 0, 327784, 4, 0, 327785, 5, 0, 327788, 3, 0, 327789, 4, 0, 327790, 4, 0, 327791, 5, 0, 327835, 3, 0, 327836, 4, 0, 327837, 4, 0, 327838, 4, 0, 327839, 4, 0, 327840, 5, 0, 327857, 0, 0, 327858, 2, 0, 327873, 0, 0, 327874, 2, 0, 327877, 0, 0, 327878, 2, 0, 327881, 0, 0, 327882, 2, 0, 327885, 0, 0, 327886, 2, 0, 327889, 0, 0, 327890, 2, 0, 327910, 0, 0, 327911, 7, 0, 327912, 4, 0, 327913, 5, 0, 327916, 3, 0, 327917, 4, 0, 327918, 4, 0, 327919, 4, 0, 327920, 4, 0, 327921, 4, 0, 327922, 4, 0, 327923, 4, 0, 327924, 4, 0, 327925, 4, 0, 327926, 4, 0, 327927, 5, 0, 327930, 11, 0, 327931, 8, 0, 327932, 8, 0, 327933, 8, 0, 327934, 8, 0, 327935, 8, 0, 327936, 8, 0, 327937, 12, 0, 327948, 3, 0, 327949, 4, 0, 327950, 4, 0, 327951, 12, 0, 327954, 0, 0, 327955, 1, 0, 327956, 1, 0, 327957, 1, 0, 327958, 1, 0, 327959, 1, 0, 327960, 1, 0, 327961, 1, 0, 327962, 1, 0, 327963, 1, 0, 327964, 1, 0, 327965, 1, 0, 327966, 1, 0, 327967, 2, 0, 327970, 0, 0, 327971, 2, 0, 327993, 3, 0, 327994, 4, 0, 327995, 4, 0, 327996, 4, 0, 327997, 4, 0, 327998, 4, 0, 327999, 4, 0, 328000, 5, 0, 458732, 3, 0, 458733, 4, 0, 458734, 4, 0, 458735, 4, 0, 458736, 4, 0, 458737, 4, 0, 458738, 4, 0, 458739, 4, 0, 458740, 4, 0, 458741, 4, 0, 458742, 4, 0, 458743, 4, 0, 458744, 4, 0, 458745, 5, 0, 393230, 0, 0, 393231, 7, 0, 393232, 5, 0, 393242, 0, 0, 393243, 7, 0, 393244, 4, 0, 393245, 4, 0, 393246, 4, 0, 393247, 4, 0, 393248, 4, 0, 393249, 4, 0, 393250, 4, 0, 393251, 4, 0, 393252, 4, 0, 393253, 4, 0, 393254, 4, 0, 393255, 4, 0, 393256, 4, 0, 393257, 4, 0, 393258, 4, 0, 393259, 4, 0, 393260, 4, 0, 393261, 4, 0, 393262, 4, 0, 393263, 4, 0, 393264, 4, 0, 393265, 9, 0, 393266, 2, 0, 393279, 3, 0, 393280, 4, 0, 393281, 5, 0, 393293, 0, 0, 393294, 2, 0, 393305, 0, 0, 393306, 2, 0, 393308, 3, 0, 393309, 5, 0, 393311, 3, 0, 393312, 5, 0, 393314, 11, 0, 393315, 8, 0, 393316, 8, 0, 393317, 8, 0, 393318, 8, 0, 393319, 8, 0, 393320, 8, 0, 393321, 12, 0, 393324, 3, 0, 393325, 4, 0, 393326, 4, 0, 393327, 5, 0, 393337, 0, 0, 393338, 2, 0, 393371, 3, 0, 393372, 4, 0, 393373, 4, 0, 393374, 4, 0, 393375, 4, 0, 393376, 5, 0, 393393, 3, 0, 393394, 9, 0, 393395, 10, 0, 393396, 1, 0, 393397, 1, 0, 393398, 1, 0, 393399, 1, 0, 393400, 1, 0, 393401, 1, 0, 393402, 1, 0, 393403, 1, 0, 393404, 1, 0, 393405, 1, 0, 393406, 1, 0, 393407, 1, 0, 393408, 6, 0, 393409, 7, 0, 393410, 5, 0, 393413, 3, 0, 393414, 5, 0, 393417, 3, 0, 393418, 5, 0, 393421, 3, 0, 393422, 5, 0, 393425, 3, 0, 393426, 9, 0, 393427, 2, 0, 393445, 0, 0, 393446, 7, 0, 393447, 4, 0, 393448, 4, 0, 393449, 5, 0, 393452, 11, 0, 393453, 8, 0, 393454, 8, 0, 393455, 8, 0, 393456, 8, 0, 393457, 8, 0, 393458, 8, 0, 393459, 8, 0, 393460, 8, 0, 393461, 8, 0, 393462, 8, 0, 393463, 12, 0, 393475, 0, 0, 393476, 1, 0, 393477, 1, 0, 393478, 1, 0, 393479, 2, 0, 393484, 11, 0, 393485, 8, 0, 393486, 12, 0, 393489, 0, 0, 393490, 7, 0, 393491, 4, 0, 393492, 4, 0, 393493, 4, 0, 393494, 4, 0, 393495, 4, 0, 393496, 4, 0, 393497, 4, 0, 393498, 4, 0, 393499, 4, 0, 393500, 8, 0, 393501, 8, 0, 393502, 8, 0, 393503, 12, 0, 393506, 3, 0, 393507, 9, 0, 393508, 2, 0, 393525, 0, 0, 393526, 1, 0, 393527, 1, 0, 393528, 6, 0, 393529, 7, 0, 393530, 4, 0, 393531, 4, 0, 393532, 4, 0, 393533, 4, 0, 393534, 4, 0, 393535, 4, 0, 393536, 5, 0, 524268, 11, 0, 524269, 8, 0, 524270, 8, 0, 524271, 8, 0, 524272, 8, 0, 524273, 8, 0, 524274, 8, 0, 524275, 8, 0, 524276, 8, 0, 524277, 8, 0, 524278, 4, 0, 524279, 4, 0, 524280, 4, 0, 524281, 9, 0, 524282, 10, 0, 524283, 1, 0, 524284, 1, 0, 524285, 1, 0, 524286, 1, 0, 524287, 1, 0, 458752, 1, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458761, 1, 0, 458762, 1, 0, 458763, 1, 0, 458764, 1, 0, 458765, 6, 0, 458766, 7, 0, 458767, 4, 0, 458768, 9, 0, 458769, 10, 0, 458770, 1, 0, 458771, 1, 0, 458772, 1, 0, 458773, 1, 0, 458774, 1, 0, 458775, 1, 0, 458776, 1, 0, 458777, 6, 0, 458778, 7, 0, 458779, 4, 0, 458780, 4, 0, 458781, 4, 0, 458782, 4, 0, 458783, 4, 0, 458784, 4, 0, 458785, 4, 0, 458786, 4, 0, 458787, 4, 0, 458788, 4, 0, 458789, 4, 0, 458790, 4, 0, 458791, 4, 0, 458792, 4, 0, 458793, 4, 0, 458794, 4, 0, 458795, 4, 0, 458796, 4, 0, 458797, 4, 0, 458798, 4, 0, 458799, 4, 0, 458800, 4, 0, 458801, 4, 0, 458802, 9, 0, 458803, 10, 0, 458804, 1, 0, 458805, 1, 0, 458806, 1, 0, 458807, 1, 0, 458808, 1, 0, 458809, 1, 0, 458810, 1, 0, 458811, 1, 0, 458812, 1, 0, 458813, 1, 0, 458814, 6, 0, 458815, 7, 0, 458816, 4, 0, 458817, 9, 0, 458818, 10, 0, 458819, 1, 0, 458820, 1, 0, 458821, 1, 0, 458822, 1, 0, 458823, 1, 0, 458824, 1, 0, 458825, 1, 0, 458826, 1, 0, 458827, 1, 0, 458828, 6, 0, 458829, 7, 0, 458830, 9, 0, 458831, 10, 0, 458832, 1, 0, 458833, 1, 0, 458834, 1, 0, 458835, 2, 0, 458838, 0, 0, 458839, 2, 0, 458841, 3, 0, 458842, 5, 0, 458844, 3, 0, 458845, 5, 0, 458847, 3, 0, 458848, 5, 0, 458860, 3, 0, 458861, 4, 0, 458862, 4, 0, 458863, 9, 0, 458864, 10, 0, 458865, 1, 0, 458866, 1, 0, 458867, 1, 0, 458868, 1, 0, 458869, 1, 0, 458870, 1, 0, 458871, 1, 0, 458872, 6, 0, 458873, 7, 0, 458874, 5, 0, 458887, 0, 0, 458888, 2, 0, 458891, 0, 0, 458892, 1, 0, 458893, 1, 0, 458894, 2, 0, 458899, 0, 0, 458900, 1, 0, 458901, 1, 0, 458902, 1, 0, 458903, 1, 0, 458904, 1, 0, 458905, 1, 0, 458906, 6, 0, 458907, 7, 0, 458908, 4, 0, 458909, 4, 0, 458910, 4, 0, 458911, 4, 0, 458912, 5, 0, 458929, 3, 0, 458930, 4, 0, 458931, 4, 0, 458932, 4, 0, 458933, 4, 0, 458934, 4, 0, 458935, 4, 0, 458936, 4, 0, 458937, 4, 0, 458938, 4, 0, 458939, 4, 0, 458940, 4, 0, 458941, 4, 0, 458942, 4, 0, 458943, 4, 0, 458944, 4, 0, 458945, 4, 0, 458946, 5, 0, 458949, 3, 0, 458950, 5, 0, 458953, 3, 0, 458954, 5, 0, 458957, 3, 0, 458958, 5, 0, 458961, 3, 0, 458962, 4, 0, 458963, 9, 0, 458964, 2, 0, 458980, 0, 0, 458981, 7, 0, 458982, 4, 0, 458983, 4, 0, 458984, 4, 0, 458985, 5, 0, 459011, 3, 0, 459012, 4, 0, 459013, 4, 0, 459014, 4, 0, 459015, 5, 0, 459024, 0, 0, 459025, 7, 0, 459026, 4, 0, 459027, 4, 0, 459028, 4, 0, 459029, 4, 0, 459030, 4, 0, 459031, 4, 0, 459032, 4, 0, 459033, 4, 0, 459034, 4, 0, 459035, 5, 0, 459042, 3, 0, 459043, 4, 0, 459044, 5, 0, 459061, 3, 0, 459062, 4, 0, 459063, 4, 0, 459064, 4, 0, 459065, 4, 0, 459066, 4, 0, 459067, 4, 0, 459068, 4, 0, 459069, 4, 0, 459070, 4, 0, 459071, 4, 0, 459072, 5, 0, 589814, 3, 0, 589815, 4, 0, 589816, 4, 0, 589817, 4, 0, 589818, 4, 0, 589819, 4, 0, 589820, 4, 0, 589821, 4, 0, 589822, 4, 0, 589823, 4, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, 4, 0, 524293, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 524297, 4, 0, 524298, 4, 0, 524299, 4, 0, 524300, 4, 0, 524301, 4, 0, 524302, 4, 0, 524303, 4, 0, 524304, 4, 0, 524305, 4, 0, 524306, 4, 0, 524307, 4, 0, 524308, 4, 0, 524309, 4, 0, 524310, 4, 0, 524311, 4, 0, 524312, 4, 0, 524313, 4, 0, 524314, 4, 0, 524315, 4, 0, 524316, 4, 0, 524317, 4, 0, 524318, 4, 0, 524319, 4, 0, 524320, 4, 0, 524321, 4, 0, 524322, 4, 0, 524323, 4, 0, 524324, 4, 0, 524325, 4, 0, 524326, 4, 0, 524327, 4, 0, 524328, 4, 0, 524329, 4, 0, 524330, 4, 0, 524331, 4, 0, 524332, 4, 0, 524333, 4, 0, 524334, 4, 0, 524335, 4, 0, 524336, 4, 0, 524337, 4, 0, 524338, 4, 0, 524339, 4, 0, 524340, 4, 0, 524341, 4, 0, 524342, 4, 0, 524343, 4, 0, 524344, 4, 0, 524345, 4, 0, 524346, 4, 0, 524347, 4, 0, 524348, 4, 0, 524349, 4, 0, 524350, 4, 0, 524351, 4, 0, 524352, 4, 0, 524353, 4, 0, 524354, 4, 0, 524355, 4, 0, 524356, 4, 0, 524357, 4, 0, 524358, 4, 0, 524359, 4, 0, 524360, 4, 0, 524361, 4, 0, 524362, 4, 0, 524363, 4, 0, 524364, 4, 0, 524365, 4, 0, 524366, 4, 0, 524367, 4, 0, 524368, 4, 0, 524369, 4, 0, 524370, 4, 0, 524371, 5, 0, 524374, 3, 0, 524375, 5, 0, 524377, 3, 0, 524378, 5, 0, 524380, 3, 0, 524381, 5, 0, 524383, 3, 0, 524384, 9, 0, 524385, 10, 0, 524386, 1, 0, 524387, 1, 0, 524388, 1, 0, 524389, 1, 0, 524390, 1, 0, 524391, 1, 0, 524392, 1, 0, 524393, 1, 0, 524394, 1, 0, 524395, 6, 0, 524396, 7, 0, 524397, 4, 0, 524398, 4, 0, 524399, 4, 0, 524400, 4, 0, 524401, 4, 0, 524402, 4, 0, 524403, 4, 0, 524404, 4, 0, 524405, 4, 0, 524406, 4, 0, 524407, 4, 0, 524408, 4, 0, 524409, 4, 0, 524410, 9, 0, 524411, 10, 0, 524412, 1, 0, 524413, 1, 0, 524414, 1, 0, 524415, 1, 0, 524416, 1, 0, 524417, 1, 0, 524418, 1, 0, 524419, 1, 0, 524420, 1, 0, 524421, 1, 0, 524422, 6, 0, 524423, 7, 0, 524424, 5, 0, 524427, 3, 0, 524428, 4, 0, 524429, 4, 0, 524430, 9, 0, 524431, 10, 0, 524432, 1, 0, 524433, 1, 0, 524434, 6, 0, 524435, 7, 0, 524436, 4, 0, 524437, 4, 0, 524438, 4, 0, 524439, 4, 0, 524440, 4, 0, 524441, 4, 0, 524442, 4, 0, 524443, 4, 0, 524444, 4, 0, 524445, 4, 0, 524446, 4, 0, 524447, 4, 0, 524448, 5, 0, 524465, 3, 0, 524466, 4, 0, 524467, 4, 0, 524468, 4, 0, 524469, 4, 0, 524470, 4, 0, 524471, 4, 0, 524472, 4, 0, 524473, 4, 0, 524474, 4, 0, 524475, 4, 0, 524476, 4, 0, 524477, 4, 0, 524478, 4, 0, 524479, 4, 0, 524480, 4, 0, 524481, 4, 0, 524482, 5, 0, 524485, 3, 0, 524486, 5, 0, 524489, 3, 0, 524490, 5, 0, 524493, 3, 0, 524494, 5, 0, 524497, 3, 0, 524498, 4, 0, 524499, 4, 0, 524500, 9, 0, 524501, 10, 0, 524502, 1, 0, 524503, 1, 0, 524504, 1, 0, 524505, 1, 0, 524506, 1, 0, 524507, 1, 0, 524508, 1, 0, 524509, 1, 0, 524510, 1, 0, 524511, 1, 0, 524512, 2, 0, 524515, 0, 0, 524516, 7, 0, 524517, 4, 0, 524518, 4, 0, 524519, 4, 0, 524520, 4, 0, 524521, 5, 0, 524524, 0, 0, 524525, 1, 0, 524526, 1, 0, 524527, 1, 0, 524528, 1, 0, 524529, 1, 0, 524530, 1, 0, 524531, 1, 0, 524532, 1, 0, 524533, 1, 0, 524534, 1, 0, 524535, 2, 0, 524540, 0, 0, 524541, 1, 0, 524542, 1, 0, 524543, 1, 0, 524544, 1, 0, 524545, 1, 0, 524546, 6, 0, 524547, 7, 0, 524548, 4, 0, 524549, 4, 0, 524550, 4, 0, 524551, 5, 0, 524553, 0, 0, 524554, 1, 0, 524555, 1, 0, 524556, 1, 0, 524557, 1, 0, 524558, 1, 0, 524559, 6, 0, 524560, 7, 0, 524561, 4, 0, 524562, 4, 0, 524563, 4, 0, 524564, 4, 0, 524565, 4, 0, 524566, 4, 0, 524567, 4, 0, 524568, 4, 0, 524569, 4, 0, 524570, 4, 0, 524571, 9, 0, 524572, 10, 0, 524573, 1, 0, 524574, 1, 0, 524575, 1, 0, 524576, 2, 0, 524578, 3, 0, 524579, 4, 0, 524580, 9, 0, 524581, 10, 0, 524582, 1, 0, 524583, 1, 0, 524584, 1, 0, 524585, 1, 0, 524586, 1, 0, 524587, 1, 0, 524588, 1, 0, 524589, 1, 0, 524590, 1, 0, 524591, 1, 0, 524592, 1, 0, 524593, 1, 0, 524594, 1, 0, 524595, 1, 0, 524596, 6, 0, 524597, 7, 0, 524598, 4, 0, 524599, 4, 0, 524600, 4, 0, 524601, 4, 0, 524602, 4, 0, 524603, 4, 0, 524604, 4, 0, 524605, 4, 0, 524606, 4, 0, 524607, 4, 0, 524608, 5, 0, 655350, 11, 0, 655351, 8, 0, 655352, 8, 0, 655353, 8, 0, 655354, 8, 0, 655355, 8, 0, 655356, 8, 0, 655357, 8, 0, 655358, 8, 0, 655359, 8, 0, 589824, 8, 0, 589825, 8, 0, 589826, 8, 0, 589827, 8, 0, 589828, 8, 0, 589829, 8, 0, 589830, 8, 0, 589831, 8, 0, 589832, 8, 0, 589833, 8, 0, 589834, 8, 0, 589835, 8, 0, 589836, 8, 0, 589837, 8, 0, 589838, 8, 0, 589839, 8, 0, 589840, 8, 0, 589841, 8, 0, 589842, 8, 0, 589843, 8, 0, 589844, 8, 0, 589845, 8, 0, 589846, 8, 0, 589847, 8, 0, 589848, 8, 0, 589849, 8, 0, 589850, 8, 0, 589851, 8, 0, 589852, 8, 0, 589853, 8, 0, 589854, 8, 0, 589855, 8, 0, 589856, 8, 0, 589857, 8, 0, 589858, 8, 0, 589859, 8, 0, 589860, 8, 0, 589861, 8, 0, 589862, 8, 0, 589863, 8, 0, 589864, 8, 0, 589865, 8, 0, 589866, 8, 0, 589867, 8, 0, 589868, 8, 0, 589869, 8, 0, 589870, 8, 0, 589871, 8, 0, 589872, 8, 0, 589873, 8, 0, 589874, 8, 0, 589875, 8, 0, 589876, 8, 0, 589877, 8, 0, 589878, 8, 0, 589879, 8, 0, 589880, 8, 0, 589881, 8, 0, 589882, 8, 0, 589883, 8, 0, 589884, 8, 0, 589885, 8, 0, 589886, 8, 0, 589887, 8, 0, 589888, 8, 0, 589889, 8, 0, 589890, 8, 0, 589891, 8, 0, 589892, 8, 0, 589893, 8, 0, 589894, 8, 0, 589895, 8, 0, 589896, 8, 0, 589897, 8, 0, 589898, 8, 0, 589899, 8, 0, 589900, 8, 0, 589901, 8, 0, 589902, 8, 0, 589903, 8, 0, 589904, 8, 0, 589905, 8, 0, 589906, 8, 0, 589907, 12, 0, 589910, 11, 0, 589911, 12, 0, 589913, 11, 0, 589914, 12, 0, 589916, 11, 0, 589917, 12, 0, 589919, 11, 0, 589920, 8, 0, 589921, 8, 0, 589922, 8, 0, 589923, 8, 0, 589924, 8, 0, 589925, 8, 0, 589926, 8, 0, 589927, 8, 0, 589928, 8, 0, 589929, 8, 0, 589930, 8, 0, 589931, 8, 0, 589932, 8, 0, 589933, 8, 0, 589934, 8, 0, 589935, 8, 0, 589936, 8, 0, 589937, 8, 0, 589938, 8, 0, 589939, 8, 0, 589940, 8, 0, 589941, 8, 0, 589942, 8, 0, 589943, 8, 0, 589944, 8, 0, 589945, 8, 0, 589946, 8, 0, 589947, 8, 0, 589948, 8, 0, 589949, 8, 0, 589950, 8, 0, 589951, 8, 0, 589952, 8, 0, 589953, 8, 0, 589954, 8, 0, 589955, 8, 0, 589956, 8, 0, 589957, 8, 0, 589958, 8, 0, 589959, 8, 0, 589960, 12, 0, 589963, 11, 0, 589964, 8, 0, 589965, 8, 0, 589966, 8, 0, 589967, 8, 0, 589968, 8, 0, 589969, 8, 0, 589970, 8, 0, 589971, 8, 0, 589972, 8, 0, 589973, 8, 0, 589974, 8, 0, 589975, 8, 0, 589976, 8, 0, 589977, 8, 0, 589978, 8, 0, 589979, 8, 0, 589980, 8, 0, 589981, 8, 0, 589982, 8, 0, 589983, 8, 0, 589984, 12, 0, 590001, 11, 0, 590002, 8, 0, 590003, 8, 0, 590004, 8, 0, 590005, 8, 0, 590006, 8, 0, 590007, 8, 0, 590008, 8, 0, 590009, 8, 0, 590010, 8, 0, 590011, 8, 0, 590012, 8, 0, 590013, 8, 0, 590014, 8, 0, 590015, 8, 0, 590016, 8, 0, 590017, 8, 0, 590018, 12, 0, 590021, 11, 0, 590022, 12, 0, 590025, 11, 0, 590026, 12, 0, 590029, 11, 0, 590030, 12, 0, 590033, 11, 0, 590034, 8, 0, 590035, 8, 0, 590036, 8, 0, 590037, 8, 0, 590038, 8, 0, 590039, 8, 0, 590040, 8, 0, 590041, 8, 0, 590042, 8, 0, 590043, 8, 0, 590044, 8, 0, 590045, 8, 0, 590046, 8, 0, 590047, 8, 0, 590048, 12, 0, 590051, 11, 0, 590052, 8, 0, 590053, 8, 0, 590054, 8, 0, 590055, 8, 0, 590056, 8, 0, 590057, 12, 0, 590060, 11, 0, 590061, 8, 0, 590062, 8, 0, 590063, 8, 0, 590064, 8, 0, 590065, 8, 0, 590066, 8, 0, 590067, 8, 0, 590068, 8, 0, 590069, 8, 0, 590070, 8, 0, 590071, 12, 0, 590076, 11, 0, 590077, 8, 0, 590078, 8, 0, 590079, 8, 0, 590080, 8, 0, 590081, 8, 0, 590082, 8, 0, 590083, 8, 0, 590084, 8, 0, 590085, 8, 0, 590086, 8, 0, 590087, 12, 0, 590089, 11, 0, 590090, 8, 0, 590091, 8, 0, 590092, 8, 0, 590093, 8, 0, 590094, 8, 0, 590095, 8, 0, 590096, 8, 0, 590097, 8, 0, 590098, 8, 0, 590099, 8, 0, 590100, 8, 0, 590101, 8, 0, 590102, 8, 0, 590103, 8, 0, 590104, 8, 0, 590105, 8, 0, 590106, 8, 0, 590107, 8, 0, 590108, 8, 0, 590109, 8, 0, 590110, 8, 0, 590111, 8, 0, 590112, 12, 0, 590114, 11, 0, 590115, 8, 0, 590116, 8, 0, 590117, 8, 0, 590118, 8, 0, 590119, 8, 0, 590120, 8, 0, 590121, 8, 0, 590122, 8, 0, 590123, 8, 0, 590124, 8, 0, 590125, 8, 0, 590126, 8, 0, 590127, 8, 0, 590128, 8, 0, 590129, 8, 0, 590130, 8, 0, 590131, 8, 0, 590132, 8, 0, 590133, 8, 0, 590134, 8, 0, 590135, 8, 0, 590136, 8, 0, 590137, 8, 0, 590138, 8, 0, 590139, 8, 0, 590140, 8, 0, 590141, 8, 0, 590142, 8, 0, 590143, 8, 0, 590144, 12, 0 )
+
+[node name="Falldown" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 18432, 768 )
+
+[node name="Platform" parent="World" instance=ExtResource( 16 )]
+position = Vector2( 31872, 1024 )
+x_range = 250.0
+speed = Vector2( 100, 300 )
+
+[node name="Falldown2" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 20736, -896 )
+
+[node name="Falldown3" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 21120, -768 )
+
+[node name="Falldown4" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 21504, -640 )
+
+[node name="Falldown5" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 21888, -512 )
+
+[node name="Falldown6" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 22272, -384 )
+
+[node name="Falldown7" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 22016, -256 )
+
+[node name="Falldown8" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 21632, -128 )
+
+[node name="Falldown9" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 21248, 0 )
+
+[node name="Falldown10" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 20864, 128 )
+
+[node name="Falldown11" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 21120, 256 )
+
+[node name="Falldown12" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 21504, 384 )
+
+[node name="Falldown13" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 21888, 512 )
+
+[node name="Falldown14" parent="World" instance=ExtResource( 15 )]
+position = Vector2( 22272, 640 )
+
+[node name="ForeObjects" type="Node2D" parent="."]
+
+[node name="Teleport" parent="ForeObjects" instance=ExtResource( 41 )]
+position = Vector2( 36496, 960 )
+
+[node name="Teleport2" parent="ForeObjects" instance=ExtResource( 41 )]
+position = Vector2( 39584, -2368 )
+
+[node name="Teleport3" parent="ForeObjects" instance=ExtResource( 41 )]
+position = Vector2( 37232, -1472 )
+
+[node name="Teleport4" parent="ForeObjects" instance=ExtResource( 41 )]
+position = Vector2( 39936, 704 )
+
+[node name="Switch" parent="ForeObjects" instance=ExtResource( 42 )]
+position = Vector2( 30472, 1000 )
+structure_name = "StoneStructure"
+
+[node name="ForeTraps" type="Node2D" parent="."]
+visible = false
+
+[node name="Coins" type="Node2D" parent="."]
+visible = false
+
+[node name="Enemies" type="Node2D" parent="."]
+visible = false
+
+[node name="Foreground" type="TileMap" parent="."]
+visible = false
+tile_set = SubResource( 19 )
+format = 1
+
+[node name="Player" parent="." instance=ExtResource( 19 )]
+position = Vector2( 256, 768 )
+is_lighting_on = true
+
+[node name="DeathZone" type="Area2D" parent="."]
+position = Vector2( 4006.04, 1382.35 )
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathZone"]
+position = Vector2( 16218, 25.65 )
+shape = SubResource( 20 )
+
+[node name="RespawnPosition" type="Node2D" parent="."]
+position = Vector2( 272, 784 )
+
+[node name="LightOccluders" type="Node2D" parent="."]
+
+[node name="WallLightOccluder" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 1792, 768 )
+
+[node name="WallLightOccluder2" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 1920, 640 )
+
+[node name="WallLightOccluder3" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( -896, 384 )
+
+[node name="WallLightOccluder4" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( -1024, 256 )
+
+[node name="WallLightOccluder5" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( -768, 512 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder6" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( -512, 512 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder7" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 0, 512 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder8" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( -768, 0 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder9" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 2176, 640 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder10" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 3328, 768 )
+
+[node name="WallLightOccluder11" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 3456, 640 )
+
+[node name="WallLightOccluder12" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 3584, 512 )
+
+[node name="WallLightOccluder13" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 4736, 384 )
+
+[node name="WallLightOccluder14" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 5120, 384 )
+
+[node name="WallLightOccluder15" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 6272, 512 )
+
+[node name="WallLightOccluder16" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 6400, 640 )
+
+[node name="WallLightOccluder17" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 6528, 768 )
+
+[node name="WallLightOccluder18" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 8064, 512 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder19" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 8448, 512 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder20" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 9856, 768 )
+
+[node name="WallLightOccluder21" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 10112, 768 )
+
+[node name="WallLightOccluder22" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 11008, 896 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder23" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 11264, 896 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder24" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 11392, 768 )
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder25" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 11648, 768 )
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder26" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 11776, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder27" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 12032, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder28" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 12160, 512 )
+scale = Vector2( 1, 6 )
+length_scale = 6
+
+[node name="WallLightOccluder29" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 12416, 512 )
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder30" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 12544, 384 )
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder31" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 13568, 384 )
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder32" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 13824, 384 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder33" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 14336, 640 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder121" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 15360, 640 )
+rotation = 1.5708
+scale = Vector2( 1, 8 )
+length_scale = 8
+
+[node name="WallLightOccluder34" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 15360, 384 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder35" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 15744, 768 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder36" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 15488, 768 )
+
+[node name="WallLightOccluder37" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17280, 896 )
+
+[node name="WallLightOccluder40" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 18304, 896 )
+
+[node name="WallLightOccluder41" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 18816, 896 )
+
+[node name="WallLightOccluder42" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 19840, -640 )
+scale = Vector2( 1, 12 )
+length_scale = 12
+
+[node name="WallLightOccluder43" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 19584, -128 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder45" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 18432, -128 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder46" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17792, -128 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder47" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17664, -128 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder48" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 20608, -1664 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder44" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 18688, -128 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder38" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17536, 896 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder39" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17792, 896 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder49" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17920, -512 )
+
+[node name="WallLightOccluder50" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 18048, -640 )
+
+[node name="WallLightOccluder122" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 19840, -640 )
+rotation = 1.5708
+scale = Vector2( 1, 14 )
+length_scale = 14
+
+[node name="WallLightOccluder51" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17792, -768 )
+
+[node name="WallLightOccluder52" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17920, -896 )
+
+[node name="WallLightOccluder53" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17664, -640 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder54" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 20608, -896 )
+scale = Vector2( 1, 17 )
+length_scale = 17
+
+[node name="WallLightOccluder55" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17408, -1280 )
+scale = Vector2( 1, 9 )
+length_scale = 9
+
+[node name="WallLightOccluder108" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 17024, -1664 )
+scale = Vector2( 1, 15 )
+length_scale = 15
+
+[node name="WallLightOccluder56" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 22656, -768 )
+scale = Vector2( 1, 9 )
+length_scale = 9
+
+[node name="WallLightOccluder57" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 22912, -768 )
+scale = Vector2( 1, 9 )
+length_scale = 9
+
+[node name="WallLightOccluder58" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 22656, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder59" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 24960, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder60" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 25216, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder61" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 25472, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder62" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 25728, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder63" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 25984, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder64" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 26240, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder65" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 26496, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder68" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 26752, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder69" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 27008, 640 )
+
+[node name="WallLightOccluder70" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 27136, 768 )
+
+[node name="WallLightOccluder71" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 27264, 896 )
+
+[node name="WallLightOccluder74" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 29184, 896 )
+
+[node name="WallLightOccluder75" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 29312, 768 )
+
+[node name="WallLightOccluder76" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 29440, 640 )
+
+[node name="WallLightOccluder77" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 29568, 512 )
+
+[node name="WallLightOccluder78" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 29696, 384 )
+
+[node name="WallLightOccluder80" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 30464, 384 )
+
+[node name="WallLightOccluder86" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 33024, 640 )
+
+[node name="WallLightOccluder123" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 33024, 768 )
+rotation = 1.5708
+scale = Vector2( 1, 8 )
+length_scale = 8
+
+[node name="WallLightOccluder124" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 34048, 640 )
+rotation = 1.5708
+scale = Vector2( 1, 8 )
+length_scale = 8
+
+[node name="WallLightOccluder98" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 34816, 896 )
+
+[node name="WallLightOccluder109" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 34688, 768 )
+
+[node name="WallLightOccluder110" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 34816, 640 )
+
+[node name="WallLightOccluder99" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 34944, 768 )
+
+[node name="WallLightOccluder100" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 35072, 640 )
+
+[node name="WallLightOccluder101" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 36352, 896 )
+
+[node name="WallLightOccluder104" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 37376, 640 )
+
+[node name="WallLightOccluder106" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 40064, 640 )
+
+[node name="WallLightOccluder81" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 30208, 512 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder85" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 32000, 384 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder82" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 30208, 1024 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder83" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 31744, 1024 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder87" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 32256, 1024 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder90" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 33920, 1024 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder96" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 36864, 640 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder125" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 36864, 896 )
+rotation = 1.5708
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder103" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 37504, 768 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder105" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 39552, 768 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder107" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 39552, 128 )
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder97" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 36992, 1024 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder94" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 35456, 128 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder95" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 36736, 128 )
+scale = Vector2( 1, 3 )
+length_scale = 3
+
+[node name="WallLightOccluder111" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 37120, -2432 )
+scale = Vector2( 1, 8 )
+length_scale = 8
+
+[node name="WallLightOccluder112" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 39680, -2432 )
+scale = Vector2( 1, 8 )
+length_scale = 8
+
+[node name="WallLightOccluder102" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 37120, 640 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder91" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 34048, 384 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder92" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 34304, 0 )
+scale = Vector2( 1, 7 )
+length_scale = 7
+
+[node name="WallLightOccluder93" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 34944, 0 )
+scale = Vector2( 1, 5 )
+length_scale = 5
+
+[node name="WallLightOccluder88" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 33152, 768 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder89" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 33792, 768 )
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder84" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 31744, 384 )
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder79" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 29952, 384 )
+scale = Vector2( 1, 7 )
+length_scale = 7
+
+[node name="WallLightOccluder72" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 28800, 1024 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder73" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 29056, 1024 )
+scale = Vector2( 1, 2 )
+length_scale = 2
+
+[node name="WallLightOccluder66" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 22912, 640 )
+
+[node name="WallLightOccluder67" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 24704, 640 )
+
+[node name="WallLightOccluder113" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 37888, -2304 )
+rotation = -1.5708
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder116" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 38528, -2176 )
+rotation = -1.5708
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder117" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 37760, -1792 )
+rotation = -1.5708
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder118" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 38400, -1920 )
+rotation = -1.5708
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder119" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 39040, -1792 )
+rotation = -1.5708
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder120" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 39168, -2304 )
+rotation = -1.5708
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder115" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 37248, -2176 )
+rotation = -1.5708
+scale = Vector2( 1, 4 )
+length_scale = 4
+
+[node name="WallLightOccluder114" parent="LightOccluders" instance=ExtResource( 43 )]
+position = Vector2( 37120, -1920 )
+rotation = -1.5708
+scale = Vector2( 1, 4 )
+length_scale = 4
+[connection signal="checkpoint_enter" from="CheckPoints/CheckPoint" to="." method="_on_CheckPoint_checkpoint_enter"]
+[connection signal="checkpoint_enter" from="CheckPoints/CheckPoint2" to="." method="_on_CheckPoint_checkpoint_enter"]
+[connection signal="teleporting" from="ForeObjects/Teleport" to="ForeObjects/Teleport2" method="teleported"]
+[connection signal="teleporting" from="ForeObjects/Teleport2" to="ForeObjects/Teleport" method="teleported"]
+[connection signal="teleporting" from="ForeObjects/Teleport3" to="ForeObjects/Teleport4" method="teleported"]
+[connection signal="teleporting" from="ForeObjects/Teleport4" to="ForeObjects/Teleport3" method="teleported"]
+[connection signal="activate" from="ForeObjects/Switch" to="." method="_on_Switch_activate"]

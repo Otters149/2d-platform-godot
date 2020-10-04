@@ -673,13 +673,10 @@ tile_data = PoolIntArray( -589540, 11, 0, -589538, 11, 0, 65788, 4, 0, 65792, 8,
 [node name="Checkpoints" type="Node2D" parent="."]
 
 [node name="CheckPoint" parent="Checkpoints" instance=ExtResource( 15 )]
-position = Vector2( 5376, 384 )
+position = Vector2( 9600, 640 )
 
 [node name="CheckPoint2" parent="Checkpoints" instance=ExtResource( 15 )]
-position = Vector2( 16841.5, 0 )
-
-[node name="CheckPoint3" parent="Checkpoints" instance=ExtResource( 15 )]
-position = Vector2( 26432, 896 )
+position = Vector2( 26240, 896 )
 
 [node name="Gate" parent="." instance=ExtResource( 17 )]
 position = Vector2( 33728, 768 )
@@ -1421,4 +1418,3 @@ shape = SubResource( 20 )
 position = Vector2( 251.762, 754.228 )
 [connection signal="checkpoint_enter" from="Checkpoints/CheckPoint" to="." method="_on_CheckPoint_checkpoint_enter"]
 [connection signal="checkpoint_enter" from="Checkpoints/CheckPoint2" to="." method="_on_CheckPoint_checkpoint_enter"]
-[connection signal="checkpoint_enter" from="Checkpoints/CheckPoint3" to="." method="_on_CheckPoint_checkpoint_enter"]

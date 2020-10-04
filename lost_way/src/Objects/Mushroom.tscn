@@ -12,7 +12,7 @@ radius = 11.4691
 height = 28.6255
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 20.5, 2.29005 )
+extents = Vector2( 21.1288, 2.29005 )
 
 [node name="Mushroom" type="KinematicBody2D"]
 scale = Vector2( 3, 3 )

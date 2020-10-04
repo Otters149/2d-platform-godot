@@ -80,7 +80,7 @@ tracks/1/keys = {
 
 [node name="Gate" type="Area2D"]
 monitorable = false
-collision_layer = 8
+collision_layer = 32
 script = ExtResource( 2 )
 
 [node name="portal" type="Sprite" parent="."]

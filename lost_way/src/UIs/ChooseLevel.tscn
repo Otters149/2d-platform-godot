@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://src/UIs/Components/LevelButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/sprites/tiles/horror/background/BG.png" type="Texture" id=2]
@@ -20,6 +20,14 @@
 [ext_resource path="res://src/Levels/Level1_04.tscn" type="PackedScene" id=18]
 [ext_resource path="res://src/Levels/Level1_05.tscn" type="PackedScene" id=19]
 [ext_resource path="res://src/Levels/Level1_06.tscn" type="PackedScene" id=20]
+[ext_resource path="res://src/Levels/Level1_07.tscn" type="PackedScene" id=21]
+[ext_resource path="res://src/Levels/Level1_11.tscn" type="PackedScene" id=22]
+[ext_resource path="res://src/Levels/Level1_13.tscn" type="PackedScene" id=23]
+[ext_resource path="res://src/Levels/Level1_10.tscn" type="PackedScene" id=24]
+[ext_resource path="res://src/Levels/Level1_08.tscn" type="PackedScene" id=25]
+[ext_resource path="res://src/Levels/Level1_09.tscn" type="PackedScene" id=26]
+[ext_resource path="res://src/Levels/Level1_12.tscn" type="PackedScene" id=27]
+[ext_resource path="res://src/Levels/Level1_14.tscn" type="PackedScene" id=28]
 
 [sub_resource type="DynamicFont" id=1]
 size = 80
@@ -209,7 +217,7 @@ margin_left = 250.0
 margin_right = 400.0
 margin_bottom = 150.0
 disabled = true
-scene_level = ExtResource( 16 )
+scene_level = ExtResource( 21 )
 level = "07"
 
 [node name="8" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
@@ -217,7 +225,7 @@ margin_left = 500.0
 margin_right = 650.0
 margin_bottom = 150.0
 disabled = true
-scene_level = ExtResource( 16 )
+scene_level = ExtResource( 25 )
 level = "08"
 
 [node name="9" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
@@ -225,7 +233,7 @@ margin_left = 750.0
 margin_right = 900.0
 margin_bottom = 150.0
 disabled = true
-scene_level = ExtResource( 16 )
+scene_level = ExtResource( 26 )
 level = "09"
 
 [node name="10" parent="HorrorSeason/Container/Line2" instance=ExtResource( 1 )]
@@ -233,7 +241,7 @@ margin_left = 1000.0
 margin_right = 1150.0
 margin_bottom = 150.0
 disabled = true
-scene_level = ExtResource( 16 )
+scene_level = ExtResource( 24 )
 level = "10"
 
 [node name="Line3" type="HBoxContainer" parent="HorrorSeason/Container"]
@@ -247,7 +255,7 @@ custom_constants/separation = 100
 [node name="11" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
 margin_bottom = 150.0
 disabled = true
-scene_level = ExtResource( 16 )
+scene_level = ExtResource( 22 )
 level = "11"
 
 [node name="12" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
@@ -255,7 +263,7 @@ margin_left = 250.0
 margin_right = 400.0
 margin_bottom = 150.0
 disabled = true
-scene_level = ExtResource( 16 )
+scene_level = ExtResource( 27 )
 level = "12"
 
 [node name="13" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
@@ -263,7 +271,7 @@ margin_left = 500.0
 margin_right = 650.0
 margin_bottom = 150.0
 disabled = true
-scene_level = ExtResource( 16 )
+scene_level = ExtResource( 23 )
 level = "13"
 
 [node name="14" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]
@@ -271,7 +279,7 @@ margin_left = 750.0
 margin_right = 900.0
 margin_bottom = 150.0
 disabled = true
-scene_level = ExtResource( 16 )
+scene_level = ExtResource( 28 )
 level = "14"
 
 [node name="15" parent="HorrorSeason/Container/Line3" instance=ExtResource( 1 )]

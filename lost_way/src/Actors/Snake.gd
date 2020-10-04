@@ -20,7 +20,6 @@ func _physics_process(delta: float) -> void:
 				_velocity.x *= 3
 			
 	if is_on_wall():
-		print("On wall")
 		$AnimationPlayer.play("Default")
 		speed.x *= -1.0
 		_velocity.x = speed.x

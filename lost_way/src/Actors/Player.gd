@@ -3,7 +3,7 @@ extends Actor
 
 export var impluse: = 1000.0
 export var dust_sfx: PackedScene
-
+export var is_lighting_on: = false setget set_lighting, get_lighting
 
 var is_ground_hit: = false
 var is_death: = false
@@ -11,6 +11,7 @@ var is_death: = false
 
 func _ready() -> void:
 	$Sfx/Spawn.play()
+	$Lighting.visible = is_lighting_on
 
 
 func _on_EnemyDetector_body_entered(body: KinematicBody2D) -> void:
@@ -101,3 +102,12 @@ func when_player_die():
 	$AnimatedSprite.play("dead")
 	$AnimationPlayer.play("death")
 	yield($AnimationPlayer, "animation_finished")
+
+
+func set_lighting(value: bool) -> void:
+	is_lighting_on = value
+	$Lighting.visible = is_lighting_on
+	
+
+func get_lighting() -> bool:
+	return is_lighting_on

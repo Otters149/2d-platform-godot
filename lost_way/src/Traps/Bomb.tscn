@@ -1,0 +1,238 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://assets/sprites/bomb/bomb_blue.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/bomb/exploit/050015.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/bomb/exploit/050003.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/bomb/exploit/050012.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/bomb/exploit/050014.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/bomb/exploit/050016.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/bomb/exploit/050017.png" type="Texture" id=7]
+[ext_resource path="res://assets/sprites/bomb/exploit/050019.png" type="Texture" id=8]
+[ext_resource path="res://assets/sprites/bomb/exploit/050001.png" type="Texture" id=9]
+[ext_resource path="res://assets/sprites/bomb/exploit/050005.png" type="Texture" id=10]
+[ext_resource path="res://assets/sprites/bomb/exploit/050011.png" type="Texture" id=11]
+[ext_resource path="res://assets/sprites/bomb/exploit/050010.png" type="Texture" id=12]
+[ext_resource path="res://assets/sprites/bomb/exploit/050009.png" type="Texture" id=13]
+[ext_resource path="res://assets/sprites/bomb/exploit/050018.png" type="Texture" id=14]
+[ext_resource path="res://assets/sprites/bomb/exploit/050007.png" type="Texture" id=15]
+[ext_resource path="res://assets/sprites/bomb/exploit/050004.png" type="Texture" id=16]
+[ext_resource path="res://assets/sprites/bomb/exploit/050000.png" type="Texture" id=17]
+[ext_resource path="res://assets/sprites/bomb/exploit/050002.png" type="Texture" id=18]
+[ext_resource path="res://assets/sprites/bomb/exploit/050013.png" type="Texture" id=19]
+[ext_resource path="res://assets/sprites/bomb/exploit/050006.png" type="Texture" id=20]
+[ext_resource path="res://assets/sprites/bomb/exploit/050008.png" type="Texture" id=21]
+[ext_resource path="res://assets/sprites/bomb/bomb_red.png" type="Texture" id=22]
+[ext_resource path="res://src/Traps/Bomb.gd" type="Script" id=23]
+[ext_resource path="res://assets/audios/bomb_countdown.WAV" type="AudioStream" id=24]
+[ext_resource path="res://assets/audios/explosion.wav" type="AudioStream" id=25]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 3 ), ExtResource( 16 ), ExtResource( 10 ), ExtResource( 20 ), ExtResource( 15 ), ExtResource( 21 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 19 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 14 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 20.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 448.93
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 569.417, 578.181 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "activated"
+length = 0.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 1 ), ExtResource( 22 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D:disabled")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "exploit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimatedSprite:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AnimatedSprite:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "waiting"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[node name="Bomb" type="Area2D"]
+scale = Vector2( 0.75, 0.75 )
+collision_layer = 512
+script = ExtResource( 23 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+visible = false
+scale = Vector2( 8, 8 )
+frames = SubResource( 1 )
+frame = 17
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 2 )
+disabled = true
+
+[node name="PlayerDectector" type="Area2D" parent="."]
+visible = false
+monitorable = false
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDectector"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "waiting"
+anims/activated = SubResource( 3 )
+anims/exploit = SubResource( 5 )
+anims/waiting = SubResource( 6 )
+
+[node name="CountDown" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 24 )
+
+[node name="Exploition" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 25 )
+[connection signal="body_entered" from="PlayerDectector" to="." method="_on_PlayerDectector_body_entered"]

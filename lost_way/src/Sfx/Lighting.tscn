@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/sprites/light/spot.png" type="Texture" id=1]
+
+[node name="Lighting" type="Node2D"]
+show_behind_parent = true
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0, 0, 0, 1 )
+
+[node name="Light2D" type="Light2D" parent="."]
+scale = Vector2( 50, 50 )
+texture = ExtResource( 1 )
+shadow_enabled = true
+shadow_color = Color( 1, 1, 1, 0 )

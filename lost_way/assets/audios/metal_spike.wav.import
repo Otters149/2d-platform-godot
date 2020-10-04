@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/metal_spike.wav-63ad19ca943abdab8a1cc837e7055f19.sample"
+
+[deps]
+
+source_file="res://assets/audios/metal_spike.wav"
+dest_files=[ "res://.import/metal_spike.wav-63ad19ca943abdab8a1cc837e7055f19.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (14).png" type="Texture" id=1]
 [ext_resource path="res://assets/sprites/tiles/horror/tile/Tile (16).png" type="Texture" id=2]
 [ext_resource path="res://src/Objects/Falldown.gd" type="Script" id=3]
+[ext_resource path="res://src/Sfx/WallLightOccluder.tscn" type="PackedScene" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 96, 96, 96, 32, 64, 0, 32 )
@@ -57,7 +58,7 @@ points = PoolVector2Array( 0, 0, 128, 0, 128, 32, 96, 64, 32, 96, 0, 96 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 124.785, 9.0813 )
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=5]
 resource_name = "default"
 length = 0.1
 tracks/0/type = "value"
@@ -73,8 +74,7 @@ tracks/0/keys = {
 "values": [ Vector2( 0, 0 ) ]
 }
 
-[sub_resource type="Animation" id=5]
-resource_name = "pre_falldown"
+[sub_resource type="Animation" id=6]
 tracks/0/type = "value"
 tracks/0/path = NodePath("TileMap:position")
 tracks/0/interp = 1
@@ -107,11 +107,16 @@ shape = SubResource( 4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "default"
-anims/default = SubResource( 6 )
-anims/pre_falldown = SubResource( 5 )
+anims/default = SubResource( 5 )
+anims/pre_falldown = SubResource( 6 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 one_shot = true
+
+[node name="WallLightOccluder" parent="." instance=ExtResource( 4 )]
+position = Vector2( 256, 0 )
+rotation = 1.5708
+length_scale = 2
 [connection signal="body_entered" from="PlayerDetector" to="." method="_on_PlayerDetector_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
